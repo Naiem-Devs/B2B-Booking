@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Site title</title>
+        <title>Dashboard-Flights-Search</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -12,7 +12,7 @@
 		<!-- CSS here -->
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> 
+        <link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">  
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -140,258 +140,298 @@
 
     <main>
 
+        <div class="side__bar scroll-style">
+            <div class="top__title">
+                <h6>Flights</h6>
+                <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
+            </div>
+            <div class="Flights__radio__btns">
+                <ul>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Traditional">
+                            <label class="form-check-label" for="Traditional">
+                                Traditional
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="NDC">
+                            <label class="form-check-label" for="NDC">
+                                NDC
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="All-tt">
+                            <label class="form-check-label" for="All-tt">
+                                All
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="from-to__wrp">
+                <div class="action__title">
+                    <label for="">1. AMMAN - DUBAI</label>
+                    <div class="action__btn">
+                        <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                        <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="from-to__blk">
+                    <div class="ft-input">
+                        <label for="">From</label>
+                        <input type="text" placeholder="AMM" class="From-btn">
+                    </div>
+                    <div class="ft-input">
+                        <label for="">To</label>
+                        <input type="text" placeholder="DXB" class="to-btn">
+                    </div>
+                    <div class="ft-input">
+                        <label for="">DATE</label>
+                        <div class="ui calendar" id="date-only">
+                            <div class="ui input left icon">
+                              <i class="calendar icon"></i>
+                              <input type="text" placeholder="Date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-input">
+                        <label for="">Time</label>
+                        <div class="ui calendar" id="time-piker">
+                            <div class="ui input left icon">
+                              <i class="time icon"></i>
+                              <input type="text" placeholder="Time">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="from-to-bropdown">
+                    <h6><i><img src="assets/img/plane-Icon.svg" alt=""></i> Amman, Jordan</h6>
+                    <ul>
+                        <li>
+
+                            <div class="form-check">
+                                <label class="form-check-label" for="Airport-1">
+                                  <img src="assets/img/curv-arrow-Icon.svg" alt="">  Queen Alia Airport
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="Airport-1" checked>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <label class="form-check-label" for="Airport-2">
+                                    <img src="assets/img/curv-arrow-Icon.svg" alt="">   Marka Military Airport
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="Airport-2">
+                              </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="from-to__wrp">
+                <div class="action__title">
+                    <label for="">1. AMMAN - DUBAI</label>
+                    <div class="action__btn">
+                        <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                        <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="from-to__blk">
+                    <div class="ft-input">
+                        <label for="">From</label>
+                        <input type="text" placeholder="AMM">
+                    </div>
+                    <div class="ft-input">
+                        <label for="">To</label>
+                        <input type="text" placeholder="DXB">
+                    </div>
+                    <div class="ft-input">
+                        <label for="">DATE</label>
+                        <input type="text" placeholder="14 OCT">
+                    </div>
+                    <div class="ft-input">
+                        <label for="">Time</label>
+                        <input type="text" placeholder="14:30">
+                    </div>
+                </div>
+            </div>
+            <div class="dash-border"></div>
+            <div class="top__title">
+                <h6>Itinerary Modifiers </h6>
+            </div>
+            <div class="select__wrp">
+                <h6>Travelers <span>(Up to 9 total)</span></h6>
+                <div class="mb-3">
+                    <div class="action__title">
+                        <label for="">1.</label>
+                        <div class="action__btn">
+                            <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                            <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Adult">Adult</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="action__title">
+                        <label for="">2. </label>
+                        <div class="action__btn">
+                            <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                            <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Child">Child</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-border"></div>
+            <div class="select__wrp">
+                <h6>Redundantly</h6>
+                <div class="mb-2">
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Non- refundable">Non- refundable</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Airlines">Airlines</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Number of stops">Number of stops</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="select__blk">
+                        <select class="wide">
+                            <option data-display="Fore types">Fore types</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="dash-border"></div>
+            <div class="select__wrp">
+                <h6>Private fare codes <span>(Up to 9 total)</span></h6>
+                <div class="select-input-flex">
+                    <div class="select__blk">
+                        <select class="">
+                            <option data-display="Airlin">Airlin</option>
+                            <option value="1">Some </option>
+                            <option value="2">Airlin </option>
+                            <option value="3" disabled> Airlin</option>
+                            <option value="4">Airlin</option>
+                        </select>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Code">
+                    </div>
+                </div>
+            </div>
+            <div class="dash-border"></div>
+            <div class="select__wrp">
+                <h6>Redundantly</h6>
+                <div class="mb-2">
+                    <div class="select__blk disabled">
+                        <select class="wide">
+                            <option data-display="Corporate Agreement No.">Corporate Agreement No.</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="select__blk disabled">
+                        <select class="wide">
+                            <option data-display="Membership No.">Membership No.</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <div class="select__blk disabled">
+                        <select class="wide">
+                            <option data-display="Abonnement No.">Abonnement No.</option>
+                            <option value="1">Some </option>
+                            <option value="2">Another </option>
+                            <option value="3" disabled> disabled</option>
+                            <option value="4">Potato</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="filter__btns">
+                <button type="button" class="border-btn"><i class="far fa-sync-alt"></i> Reset</button>
+                <button type="button" class="thm_btn"><i class="far fa-search"></i> Search</button>
+            </div>
+        </div>
 
         <!--------- Section START ---------->
         <section class="box-body">
             <div class="container">
-                <div class="holidays-cont">
-                    <div class="row align-items-center">
-                        <div class="col-lg-2 col-md-3">
-                            <div class="holidays-img">
-                                <a href="#"><img src="assets/img/holidays.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-6">
-                            <div class="Success__blk">
-                                <i>
-                                    <img src="assets/img/check-Icons.svg" alt="">
-                                </i>
-                                <div class="">
-                                    <h6>Success</h6>
-                                    <p>Is simply dummy text of the printing and typesetting industry</p>
-                                </div>
-                                <button type="button"><i class="fal fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3">
-                            <div class="">
-                                <div class="time__blk">
-                                    <span>-1:59:24 PM</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="order_content">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Total Orders
-                                    <span>100</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-1.svg" alt=""></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Pending orders
-                                    <span>200</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-2.svg" alt=""></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Rejected Orders
-                                    <span>200</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-3.svg" alt=""></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Success Orders
-                                    <span>200</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-4.svg" alt=""></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Tickets
-                                    <span>200</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-5.svg" alt=""></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-6 col-sm-6">
-                            <div class="order__blk">
-                                <h6>
-                                    Open Ticket
-                                    <span>200</span>
-                                </h6>
-                                <i><img src="assets/img/od-Icon-6.svg" alt=""></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="Announc__blk">
-                            <h5>Announcements</h5>
-                            <ul>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i>
-                                        <img src="assets/img/od-Icon-3.svg" alt="">
-                                    </i>
-                                    <div class="">
-                                        <h6>Error: Flight Booking Unavailable</h6>
-                                        <p>Is simply dummy text of the printing and typesetting industry.  <span>| 02:00 PM</span></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="sales__blk">
-                            <div class="sales__content">
-                                <div class="sales__top">
-                                    <h5>Total sales</h5>
-                                    <div class="select__blk">
-                                        <select class="wide">
-                                            <option data-display="Total Sales">Total Sales</option>
-                                            <option value="1">Some option</option>
-                                            <option value="2">Another option</option>
-                                            <option value="3" disabled> disabled option</option>
-                                            <option value="4">Potato</option>
-                                          </select>
-                                    </div>
-                                </div>
-                                <div class="sales__chart">
-                                    <img src="assets/img/chart-img.png" alt="">
-                                </div>
-                            </div>
-                            <ul class="multiColor-ck">
-                                <li>
-                                    <div class="form-check ckv-1">
-                                        <input class="form-check-input" type="checkbox" value="" id="Flights" checked>
-                                        <label class="form-check-label" for="Flights">
-                                            Flights
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="Hotels" checked>
-                                        <label class="form-check-label" for="Hotels">
-                                            Hotels
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="Cars" checked>
-                                        <label class="form-check-label" for="Cars">
-                                            Cars
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="Cruises" checked>
-                                        <label class="form-check-label" for="Cruises">
-                                            Cruises
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-5">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Visa
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-6">
-                                        <input class="form-check-input" type="checkbox" value="" id="Tours" checked>
-                                        <label class="form-check-label" for="Tours">
-                                            Tours
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-7">
-                                        <input class="form-check-input" type="checkbox" value="" id="Activity" checked>
-                                        <label class="form-check-label" for="Activity">
-                                            Activity
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check ckv-8">
-                                        <input class="form-check-input" type="checkbox" value="" id="Packages" checked>
-                                        <label class="form-check-label" for="Packages">
-                                            Packages
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="">
+
                 </div>
             </div>
         </section>
         <!--------- Section End ---------->
+
+
+        <!--------- Section START ---------->
+        <section class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12"></div>
+                </div>
+            </div>
+        </section>
+        <!--------- Section End ---------->
+
 
 
     </main>
@@ -490,9 +530,18 @@
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.nice-select.min.js"></script> 
-        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
         <script src="assets/js/main.js"></script>
+<script>
+    $('#date-only').calendar({
+  type: 'date'
+});
 
+$('#time-piker').calendar({
+  ampm: false,
+  type: 'time'
+});
+</script>
     </body>
 </html>
 

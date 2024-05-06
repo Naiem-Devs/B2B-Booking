@@ -18,6 +18,12 @@
     $('.lng__blk').removeClass('show');  
   }); 
   
+  
+ // menu 
+  $('.From-btn').click( function (){ 
+    $('.from-to-bropdown').toggleClass('show');   
+  }); 
+  
 
 
 
