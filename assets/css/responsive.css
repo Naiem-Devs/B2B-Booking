@@ -1,0 +1,144 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .fixed-nav__wrp ul {
+        width: 35%;
+    }
+    .order__blk {
+        width: 160px;
+    }
+    
+    .Success__blk {
+        margin: 0;
+    }
+
+    .off-btn {
+        right: 20px;
+    }
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .fixed-nav__wrp ul {
+        width: 35%;
+    }
+    .order__blk {
+        width: 160px;
+    }
+
+.order_content .row {
+    gap: 20px;
+    justify-content: center;
+}
+    
+    .Success__blk {
+        /* margin: 0; */
+    }
+
+    .off-btn {
+        right: 10px;
+    }
+    .Announc__blk ul {
+        height: 345px;
+    }
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .fixed-nav {
+        padding: 4px 0px;
+    }
+    
+    .center__btn a {
+        top: -26px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .fixed-nav__wrp ul li a i {
+        margin: 0;
+    }
+    .top-text {
+        display: none;
+    }
+    
+.header__content {
+    /* overflow: hidden; */
+    max-width: 90%;
+    margin: auto;
+}
+.header__opt {
+    left: 0%;
+    transform: translateX(-59%);
+}
+
+.notifi__blk .header__opt {
+    left: 0;
+    transform: translateX(-81%);
+}
+.notifi__blk + i {
+    display: none;
+}
+    .sales__blk {
+        flex-direction: column;
+    }
+    .fixed-nav__wrp ul {
+        width: 30%;
+    }
+    .order__blk {
+        width: 160px;
+        margin: auto;
+    }
+
+.order_content .row {
+    gap: 10px 0;
+}
+    
+    .Success__blk {
+        margin: 20px 0;
+    }
+
+    .off-btn {
+        right: 10px;
+        width: 13px;
+        top: 11px;
+    }
+    .Announc__blk ul {
+        height: 345px;
+    }
+    .fixed-nav__wrp ul li a span {
+        display: none;
+    }
+    
+    .fixed-nav__wrp {
+        max-width: 100%;
+        padding-right: 6px;
+    }
+    .time__blk {
+        width: 100%;
+    }
+    .multiColor-ck {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 5px 0px;
+    }
+    
+    .multiColor-ck li {
+        width: 33%;
+    }
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
