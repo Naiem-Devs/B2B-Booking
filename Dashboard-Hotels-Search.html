@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard-Flights-Search</title>
+        <title>Dashboard-Hotels-Search</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -140,42 +140,14 @@
 
     <main>
 
-        <div class="side__bar scroll-style position-fixed">
+        <div class="side__bar scroll-style pb-5 ">
             <div class="top__title">
-                <h6>Flights</h6>
+                <h6>Hotels</h6>
                 <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
-            </div>
-            <div class="Flights__radio__btns">
-                <ul>
-                    <li>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Traditional">
-                            <label class="form-check-label" for="Traditional">
-                                Traditional
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="NDC">
-                            <label class="form-check-label" for="NDC">
-                                NDC
-                            </label>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="All-tt">
-                            <label class="form-check-label" for="All-tt">
-                                All
-                            </label>
-                        </div>
-                    </li>
-                </ul>
             </div>
             <div class="from-to__wrp">
                 <div class="action__title">
-                    <label for="">1. AMMAN - DUBAI</label>
+                    <label for="">1. Aqaba - Jordan</label>
                     <div class="action__btn">
                         <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
                         <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
@@ -183,12 +155,8 @@
                 </div>
                 <div class="from-to__blk">
                     <div class="ft-input">
-                        <label for="">From</label>
+                        <label for="">Where</label>
                         <input type="text" placeholder="AMM" class="From-btn">
-                    </div>
-                    <div class="ft-input">
-                        <label for="">To</label>
-                        <input type="text" placeholder="DXB" class="to-btn">
                     </div>
                     <div class="ft-input">
                         <label for="">DATE</label>
@@ -200,13 +168,8 @@
                         </div>
                     </div>
                     <div class="ft-input">
-                        <label for="">Time</label>
-                        <div class="ui calendar" id="time-piker">
-                            <div class="ui input left icon">
-                              <i class="time icon"></i>
-                              <input type="text" placeholder="Time">
-                            </div>
-                          </div>
+                        <label for="">Rooms</label>
+                        <input type="text" placeholder="1" >
                     </div>
                 </div>
                 <div class="from-to-bropdown">
@@ -232,33 +195,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="from-to__wrp">
-                <div class="action__title">
-                    <label for="">1. AMMAN - DUBAI</label>
-                    <div class="action__btn">
-                        <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
-                        <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="from-to__blk">
-                    <div class="ft-input">
-                        <label for="">From</label>
-                        <input type="text" placeholder="AMM">
-                    </div>
-                    <div class="ft-input">
-                        <label for="">To</label>
-                        <input type="text" placeholder="DXB">
-                    </div>
-                    <div class="ft-input">
-                        <label for="">DATE</label>
-                        <input type="text" placeholder="14 OCT">
-                    </div>
-                    <div class="ft-input">
-                        <label for="">Time</label>
-                        <input type="text" placeholder="14:30">
-                    </div>
-                </div>
-            </div>
             <div class="dash-border"></div>
             <div class="top__title">
                 <h6>Itinerary Modifiers </h6>
@@ -273,7 +209,7 @@
                             <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
                         </div>
                     </div>
-                    <div class="select__blk">
+                    <div class="select__blk radio__select">
                         <select class="wide">
                             <option data-display="Adult">Adult</option>
                             <option value="1">Some </option>
@@ -291,7 +227,7 @@
                             <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
                         </div>
                     </div>
-                    <div class="select__blk">
+                    <div class="select__blk radio__select">
                         <select class="wide">
                             <option data-display="Child">Child</option>
                             <option value="1">Some </option>
@@ -303,107 +239,141 @@
                 </div>
             </div>
             <div class="dash-border"></div>
-            <div class="select__wrp">
-                <h6>Redundantly</h6>
-                <div class="mb-2">
-                    <div class="select__blk">
-                        <select class="wide">
-                            <option data-display="Non- refundable">Non- refundable</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
+            <div class="top__title">
+                <h6>Filter by:  </h6>
+            </div>
+            <div class="slider PriceRange__blk">
+                <img src="assets/img/range-chart.svg" class="range-chart" alt="">
+                <p>Price Range</p>
+                <div class="range-slider">
+                    <span class="rangeValues"></span>
+                    <input value="0" min="0" max="300" step="1" type="range">
+                    <input value="300" min="0" max="300" step="1" type="range">
                 </div>
-                <div class="mb-2">
-                    <div class="select__blk">
-                        <select class="wide">
-                            <option data-display="Airlines">Airlines</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <div class="select__blk">
-                        <select class="wide">
-                            <option data-display="Number of stops">Number of stops</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <div class="select__blk">
-                        <select class="wide">
-                            <option data-display="Fore types">Fore types</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
+             </div>
+            <div class="dash-border"></div>
+            <div class="checkBox__list">
+                <h6>Popular filters</h6>
+                <ul>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-1">
+                            <label class="form-check-label" for="ck-1">
+                                5 stars <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-2">
+                            <label class="form-check-label" for="ck-2">
+                                Private bathroom <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-3">
+                            <label class="form-check-label" for="ck-3">
+                                Free cancellation <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-4">
+                            <label class="form-check-label" for="ck-4">
+                                Apartments <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-5">
+                            <label class="form-check-label" for="ck-5">
+                                Beach <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-6">
+                            <label class="form-check-label" for="ck-6">
+                                Free Wifi <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ck-7">
+                            <label class="form-check-label" for="ck-7">
+                                Breakfast & dinner included <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="dash-border"></div>
-            <div class="select__wrp">
-                <h6>Private fare codes <span>(Up to 9 total)</span></h6>
-                <div class="select-input-flex">
-                    <div class="select__blk">
-                        <select class="">
-                            <option data-display="Airlin">Airlin</option>
-                            <option value="1">Some </option>
-                            <option value="2">Airlin </option>
-                            <option value="3" disabled> Airlin</option>
-                            <option value="4">Airlin</option>
-                        </select>
-                    </div>
-                    <div class="input">
-                        <input type="text" placeholder="Code">
-                    </div>
-                </div>
-            </div>
-            <div class="dash-border"></div>
-            <div class="select__wrp">
-                <h6>Redundantly</h6>
-                <div class="mb-2">
-                    <div class="select__blk disabled">
-                        <select class="wide">
-                            <option data-display="Corporate Agreement No.">Corporate Agreement No.</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <div class="select__blk disabled">
-                        <select class="wide">
-                            <option data-display="Membership No.">Membership No.</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="mb-2">
-                    <div class="select__blk disabled">
-                        <select class="wide">
-                            <option data-display="Abonnement No.">Abonnement No.</option>
-                            <option value="1">Some </option>
-                            <option value="2">Another </option>
-                            <option value="3" disabled> disabled</option>
-                            <option value="4">Potato</option>
-                        </select>
-                    </div>
-                </div>
+            <div class="checkBox__list mb-5">
+                <h6>Popular filters</h6>
+                <ul>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-1">
+                            <label class="form-check-label" for="ckk-1">
+                                Deira <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-2">
+                            <label class="form-check-label" for="ckk-2">
+                                Private bathroom <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-3">
+                            <label class="form-check-label" for="ckk-3">
+                                Free cancellation <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-4">
+                            <label class="form-check-label" for="ckk-4">
+                                Apartments <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-5">
+                            <label class="form-check-label" for="ckk-5">
+                                Beach <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-6">
+                            <label class="form-check-label" for="ckk-6">
+                                Free Wifi <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ckk-7">
+                            <label class="form-check-label" for="ckk-7">
+                                Breakfast & dinner included <span>7</span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="filter__btns">
                 <button type="button" class="border-btn"><i class="far fa-sync-alt"></i> Reset</button>
@@ -412,11 +382,149 @@
         </div>
 
         <!--------- Section START ---------->
-        <section class="box-body centared">
+        <section class="box-body ">
             <div class="container">
-                <div class="src__text">
-                    <i><img src="assets/img/src-Icon.svg" alt=""></i>
-                    <span>Enter Hotel details to find available options.</span>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <div class="hotel__wrp scroll-style">
+                            <div class=" hotel__title">
+                                <p>35 Hotels options <i class="fal fa-info-circle"></i></p>
+                                <div class="select__blk no-border">
+                                    <label for="">sort by : </label>
+                                    <select class="">
+                                        <option data-display="price..">Total </option>
+                                        <option value="1">Some </option>
+                                        <option value="2">Another </option>
+                                        <option value="3" disabled> disabled </option>
+                                        <option value="4">Potato</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="box__style hotel__blk">
+                                <div class="flex">
+                                    <i>
+                                        <img src="assets/img/hotel-img.png" alt="">
+                                    </i>
+                                    <div class="hotel__info">
+                                        <h6>East hotel  <span>Very good 8.8</span></h6>
+                                        <span>Amman - Jordan</span>
+                                        <ul>
+                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
+                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
+                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hotel__btm">
+                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <div class="">
+                                        <h6>$160</h6>
+                                        <button type="button">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__style hotel__blk">
+                                <div class="flex">
+                                    <i>
+                                        <img src="assets/img/hotel-img.png" alt="">
+                                    </i>
+                                    <div class="hotel__info">
+                                        <h6>East hotel  <span>Very good 8.8</span></h6>
+                                        <span>Amman - Jordan</span>
+                                        <ul>
+                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
+                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
+                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hotel__btm">
+                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <div class="">
+                                        <h6>$160</h6>
+                                        <button type="button">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__style hotel__blk">
+                                <div class="flex">
+                                    <i>
+                                        <img src="assets/img/hotel-img.png" alt="">
+                                    </i>
+                                    <div class="hotel__info">
+                                        <h6>East hotel  <span>Very good 8.8</span></h6>
+                                        <span>Amman - Jordan</span>
+                                        <ul>
+                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
+                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
+                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hotel__btm">
+                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <div class="">
+                                        <h6>$160</h6>
+                                        <button type="button">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__style hotel__blk">
+                                <div class="flex">
+                                    <i>
+                                        <img src="assets/img/hotel-img.png" alt="">
+                                    </i>
+                                    <div class="hotel__info">
+                                        <h6>East hotel  <span>Very good 8.8</span></h6>
+                                        <span>Amman - Jordan</span>
+                                        <ul>
+                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
+                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
+                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hotel__btm">
+                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <div class="">
+                                        <h6>$160</h6>
+                                        <button type="button">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box__style hotel__blk">
+                                <div class="flex">
+                                    <i>
+                                        <img src="assets/img/hotel-img.png" alt="">
+                                    </i>
+                                    <div class="hotel__info">
+                                        <h6>East hotel  <span>Very good 8.8</span></h6>
+                                        <span>Amman - Jordan</span>
+                                        <ul>
+                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
+                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
+                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="hotel__btm">
+                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <div class="">
+                                        <h6>$160</h6>
+                                        <button type="button">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="map__wrp">
+                            <div style="width: 100%" class="map__blk long__map scroll-style">
+                                <iframe width="2000" height="1400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2000&amp;height=1400&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -542,6 +650,38 @@ $('#time-piker').calendar({
   ampm: false,
   type: 'time'
 });
+</script>
+
+<script>
+    function getVals() {
+  // Get slider values
+  let parent = this.parentNode;
+  let slides = parent.getElementsByTagName('input');
+  let slide1 = parseFloat(slides[0].value);
+  let slide2 = parseFloat(slides[1].value); // Neither slider will clip the other, so make sure we determine which is larger
+  if (slide1 > slide2) {
+    let tmp = slide2;
+    slide2 = slide1;
+    slide1 = tmp;
+  }
+  let displayElement = parent.getElementsByClassName('rangeValues')[0];
+  //innerHTML property allows Javascript code to manipulate a website being displayed
+  displayElement.innerHTML = '$' + slide1 + ' - $' + slide2;
+}
+window.onload = function () {
+  // Initialize Sliders
+  let sliderSections = document.getElementsByClassName('range-slider');
+  for (let x = 0; x < sliderSections.length; x++) {
+    let sliders = sliderSections[x].getElementsByTagName('input');
+    for (let y = 0; y < sliders.length; y++) {
+      if (sliders[y].type === 'range') {
+        //oninput attribute fires when the value of an <input> element is changed
+        sliders[y].oninput = getVals; // Manually trigger event first time to display values
+        sliders[y].oninput();
+      }
+    }
+  }
+};
 </script>
     </body>
 </html>
