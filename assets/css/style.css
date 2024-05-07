@@ -957,8 +957,8 @@ i.time.icon {
     overflow: auto;
 } */
 .f-width .header__content{
-    width: calc(100% - 200px);
     margin: auto;
+    width: calc(100% - 20px);
 }
 .f-width .container-fluid{
     padding: 0 30px;
