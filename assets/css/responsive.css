@@ -21,6 +21,14 @@
     .off-btn {
         right: 20px;
     }
+
+    .map__wrp.short .map__blk {
+        height: calc(35vh - 0px);
+    }
+    
+    .hotel__Details {
+        height: 36vh;
+    }
 }
 
  

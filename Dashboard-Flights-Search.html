@@ -17,12 +17,12 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
-    <body class="btm__space">
+    <body class="btm__space  f-width">
 
        
     <!-- header-area START -->
     <div class="header-area">
-        <div class="container lg">
+        <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="header__content">
                     <div class="logo">
@@ -140,7 +140,7 @@
 
     <main>
 
-        <div class="side__bar scroll-style position-fixed">
+        <div class="side__bar scroll-style position-fixed d-none">
             <div class="top__title">
                 <h6>Flights</h6>
                 <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
@@ -206,7 +206,7 @@
                               <i class="time icon"></i>
                               <input type="text" placeholder="Time">
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
                 <div class="from-to-bropdown">
@@ -412,11 +412,287 @@
         </div>
 
         <!--------- Section START ---------->
-        <section class="box-body centared">
-            <div class="container">
-                <div class="src__text">
-                    <i><img src="assets/img/src-Icon.svg" alt=""></i>
-                    <span>Enter Hotel details to find available options.</span>
+        <section class="box-body ">
+            <div class="centared">
+                <div class="container">
+                    <div class="src__text">
+                        <i><img src="assets/img/src-Icon.svg" alt=""></i>
+                        <span>Enter Hotel details to find available options.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="box__wrp">
+                    <div class="box__columns1">
+                        <div class="side__bar  ">
+                            <div class="side__content scroll-style">
+                                <div class="top__title ">
+                                    <h6>Flights</h6>
+                                    <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
+                                </div>
+                                <div class="Flights__radio__btns">
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="Traditional">
+                                                <label class="form-check-label" for="Traditional">
+                                                    Traditional
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="NDC">
+                                                <label class="form-check-label" for="NDC">
+                                                    NDC
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="All-tt">
+                                                <label class="form-check-label" for="All-tt">
+                                                    All
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="from-to__wrp">
+                                    <div class="action__title">
+                                        <label for="">1. AMMAN - DUBAI</label>
+                                        <div class="action__btn">
+                                            <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                                            <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="from-to__blk">
+                                        <div class="ft-input">
+                                            <label for="">From</label>
+                                            <input type="text" placeholder="AMM" class="From-btn">
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">To</label>
+                                            <input type="text" placeholder="DXB" class="to-btn">
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">DATE</label>
+                                            <div class="ui calendar" id="date-only">
+                                                <div class="ui input left icon">
+                                                  <i class="calendar icon"></i>
+                                                  <input type="text" placeholder="Date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">Time</label>
+                                            <div class="ui calendar" id="time-piker">
+                                                <div class="ui input left icon">
+                                                  <i class="time icon"></i>
+                                                  <input type="text" placeholder="Time">
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="from-to-bropdown">
+                                        <h6><i><img src="assets/img/plane-Icon.svg" alt=""></i> Amman, Jordan</h6>
+                                        <ul>
+                                            <li>
+                    
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="Airport-1">
+                                                      <img src="assets/img/curv-arrow-Icon.svg" alt="">  Queen Alia Airport
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="Airport-1" checked>
+                                                  </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check">
+                                                    <label class="form-check-label" for="Airport-2">
+                                                        <img src="assets/img/curv-arrow-Icon.svg" alt="">   Marka Military Airport
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value="" id="Airport-2">
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="from-to__wrp">
+                                    <div class="action__title">
+                                        <label for="">1. AMMAN - DUBAI</label>
+                                        <div class="action__btn">
+                                            <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                                            <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                    <div class="from-to__blk">
+                                        <div class="ft-input">
+                                            <label for="">From</label>
+                                            <input type="text" placeholder="AMM">
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">To</label>
+                                            <input type="text" placeholder="DXB">
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">DATE</label>
+                                            <input type="text" placeholder="14 OCT">
+                                        </div>
+                                        <div class="ft-input">
+                                            <label for="">Time</label>
+                                            <input type="text" placeholder="14:30">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="top__title">
+                                    <h6>Itinerary Modifiers </h6>
+                                </div>
+                                <div class="select__wrp">
+                                    <h6>Travelers <span>(Up to 9 total)</span></h6>
+                                    <div class="mb-3">
+                                        <div class="action__title">
+                                            <label for="">1.</label>
+                                            <div class="action__btn">
+                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="select__blk radio__select">
+                                            <select class="wide">
+                                                <option data-display="Adult">Adult</option>
+                                                <option value="1">Child </option>
+                                                <option value="2">Infant </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="action__title">
+                                            <label for="">2. </label>
+                                            <div class="action__btn">
+                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
+                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
+                                            </div>
+                                        </div>
+                                        <div class="select__blk radio__select">
+                                            <select class="wide">
+                                                <option data-display="Child">Child</option>
+                                                <option value="1">Adult </option>
+                                                <option value="2">Infant </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="select__wrp">
+                                    <h6>Redundantly</h6>
+                                    <div class="mb-2">
+                                        <div class="select__blk">
+                                            <select class="wide">
+                                                <option data-display="Non- refundable">Non- refundable</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="select__blk">
+                                            <select class="wide">
+                                                <option data-display="Airlines">Airlines</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="select__blk">
+                                            <select class="wide">
+                                                <option data-display="Number of stops">Number of stops</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2">
+                                        <div class="select__blk">
+                                            <select class="wide">
+                                                <option data-display="Fore types">Fore types</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="select__wrp">
+                                    <h6>Private fare codes <span>(Up to 9 total)</span></h6>
+                                    <div class="select-input-flex">
+                                        <div class="select__blk sm">
+                                            <select class="">
+                                                <option data-display="Airlin">Airlin</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Airlin </option>
+                                                <option value="3" disabled> Airlin</option>
+                                                <option value="4">Airlin</option>
+                                            </select>
+                                        </div>
+                                        <div class="input">
+                                            <input type="text" placeholder="Code">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="select__wrp ">
+                                    <h6>Redundantly</h6>
+                                    <div class="mb-2 overflow-hidden">
+                                        <div class="select__blk disabled">
+                                            <select class="wide">
+                                                <option data-display="Corporate Agreement No.">Corporate Agreement No.</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2 overflow-hidden">
+                                        <div class="select__blk disabled">
+                                            <select class="wide">
+                                                <option data-display="Membership No.">Membership No.</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-2 overflow-hidden">
+                                        <div class="select__blk disabled">
+                                            <select class="wide">
+                                                <option data-display="Abonnement No.">Abonnement No.</option>
+                                                <option value="1">Some </option>
+                                                <option value="2">Another </option>
+                                                <option value="3" disabled> disabled</option>
+                                                <option value="4">Potato</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__btns">
+                                <button type="button" class="border-btn"><i class="far fa-sync-alt"></i> Reset</button>
+                                <button type="button" class="thm_btn"><i class="far fa-search"></i> Search</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

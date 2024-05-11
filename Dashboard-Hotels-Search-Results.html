@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard-Hotels-Search</title>
+        <title>Dashboard- Hotels| Results</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -147,7 +147,7 @@
             <div class="container-fluid">
                 <div class="box__wrp">
                     <div class="box__columns1">
-                        <div class="side__bar   ">
+                        <div class="side__bar ">
                             <div class="side__content scroll-style">
                                 <div class="top__title">
                                     <h6>Hotels</h6>
@@ -166,12 +166,24 @@
                                             <label for="">Where</label>
                                             <input type="text" placeholder="AMM" class="From-btn">
                                         </div>
-                                        <div class="ft-input">
+                                        <div class="ft-input lg">
                                             <label for="">DATE</label>
-                                            <div class="ui calendar" id="date-only">
-                                                <div class="ui input left icon">
-                                                  <i class="calendar icon"></i>
-                                                  <input type="text" placeholder="Date">
+                                            <div class="two fields">
+                                                <div class="field calendarStart">
+                                                  <div class="ui calendar" id="rangestart">
+                                                    <div class="ui input left icon">
+                                                      <i class="calendar icon"></i>
+                                                      <input type="text" placeholder="Start">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="field">
+                                                  <div class="ui calendar" id="rangeend">
+                                                    <div class="ui input left icon">
+                                                      <i class="calendar icon"></i>
+                                                      <input type="text" placeholder="End">
+                                                    </div>
+                                                  </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -220,10 +232,8 @@
                                         <div class="select__blk radio__select">
                                             <select class="wide">
                                                 <option data-display="Adult">Adult</option>
-                                                <option value="1">Some </option>
-                                                <option value="2">Another </option>
-                                                <option value="3" disabled> disabled</option>
-                                                <option value="4">Potato</option>
+                                                <option value="1">Child </option>
+                                                <option value="2">Infant </option>
                                             </select>
                                         </div>
                                     </div>
@@ -238,10 +248,8 @@
                                         <div class="select__blk radio__select">
                                             <select class="wide">
                                                 <option data-display="Child">Child</option>
-                                                <option value="1">Some </option>
-                                                <option value="2">Another </option>
-                                                <option value="3" disabled> disabled</option>
-                                                <option value="4">Potato</option>
+                                                <option value="1">Adult </option>
+                                                <option value="2">Infant </option>
                                             </select>
                                         </div>
                                     </div>
@@ -405,7 +413,7 @@
                                       </select>
                                 </div>
                             </div>
-                            <div class="box__style hotel__blk">
+                            <div class="box__style hotel__blk active">
                                 <div class="flex">
                                     <i>
                                         <img src="assets/img/hotel-img.png" alt="">
@@ -424,7 +432,7 @@
                                     <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" type="button">Select</a>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +455,7 @@
                                     <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" type="button">Select</a>
                                     </div>
                                 </div>
                             </div>
@@ -470,7 +478,7 @@
                                     <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" type="button">Select</a>
                                     </div>
                                 </div>
                             </div>
@@ -493,7 +501,7 @@
                                     <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" type="button">Select</a>
                                     </div>
                                 </div>
                             </div>
@@ -516,14 +524,14 @@
                                     <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" type="button">Select</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="box__columns3">
-                        <div class="map__wrp">
+                        <div class="map__wrp ">
                             <div style="width: 100%" class="map__blk long__map scroll-style">
                                 <iframe width="2000" height="1400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2000&amp;height=1400&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
                             </div>
@@ -535,17 +543,154 @@
         <!--------- Section End ---------->
 
 
-        <!--------- Section START ---------->
-        <section class="">
-            <div class="container">
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0 d-flex pb-0">
+          <button type="button" class="btn-close m-0 pb-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="hotel__view__modal">
                 <div class="row">
-                    <div class="col-lg-12"></div>
+                    <div class="col-lg-9 col-md-7">
+                        <div class="hotel__viwe scroll-style">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-7.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-8.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-9.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-6.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-7.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-8.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <a href="">
+                                        <img src="assets/img/hotel__viwe-9.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5">
+                        <div class="hotel__view__text">
+                            <div class="hotel__name">
+                                <i>
+                                    <img src="assets/img/hotel-img.png" alt="">
+                                </i>
+                                <div class="">
+                                    <h5>East hotel</h5>
+                                    <p>11181, Sowayma, Jordan</p>
+                                </div>
+                            </div>
+                            <ul class="hotel__svc__list flex-column">
+                                <li><i><img src="assets/img/svc-icon-1.svg" alt=""></i> <span>Outdoor swimming pool</span></li>
+                                <li><i><img src="assets/img/svc-icon-2.svg" alt=""></i> <span>Room Service</span></li>
+                                <li><i><img src="assets/img/svc-icon-3.svg" alt=""></i> <span>Spa and wellness center</span></li>
+                                <li><i><img src="assets/img/svc-icon-4.svg" alt=""></i> <span>Beachfront</span></li>
+                                <li><i><img src="assets/img/svc-icon-5.svg" alt=""></i> <span>Fitness center</span></li>
+                                <li><i><img src="assets/img/svc-icon-6.svg" alt=""></i> <span>Free parking</span></li>
+                                <li><i><img src="assets/img/svc-icon-7.svg" alt=""></i> <span>Private beach area</span></li>
+                                <li><i><img src="assets/img/svc-icon-8.svg" alt=""></i> <span>Tea/coffee maker in all rooms</span></li>
+                                <li><i><img src="assets/img/svc-icon-9.svg" alt=""></i> <span>Breakfast</span></li>
+                                <li><i><img src="assets/img/svc-icon-10.svg" alt=""></i> <span>Bar</span></li>
+                            </ul>
+                            <div class="Nearby__blk">
+                                <h6>Nearby </h6>
+                                <ul>
+                                    <li>Burj Khalifa <span>17 KM</span></li>
+                                    <li>Burj Khalifa <span>17 KM</span></li>
+                                    <li>Burj Khalifa <span>17 KM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!--------- Section End ---------->
-
-
+        </div>
+      </div>
+    </div>
+  </div>
 
     </main>
 
@@ -646,13 +791,13 @@
         <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
         <script src="assets/js/main.js"></script>
 <script>
-    $('#date-only').calendar({
-  type: 'date'
+$('#rangestart').calendar({
+  type: 'date',
+  endCalendar: $('#rangeend')
 });
-
-$('#time-piker').calendar({
-  ampm: false,
-  type: 'time'
+$('#rangeend').calendar({
+  type: 'date',
+  startCalendar: $('#rangestart')
 });
 </script>
 

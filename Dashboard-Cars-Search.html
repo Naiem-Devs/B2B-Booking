@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard-Hotels-Search</title>
+        <title>Dashboard- Cars| Search</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -148,7 +148,7 @@
                 <div class="container">
                     <div class="src__text">
                         <i><img src="assets/img/src-Icon.svg" alt=""></i>
-                        <span>Enter Hotel details to find available options.</span>
+                        <span>Enter Car details to find available options.</span>
                     </div>
                 </div>
             </div>
@@ -158,12 +158,12 @@
                         <div class="side__bar ">
                             <div class="side__content scroll-style">
                                 <div class="top__title">
-                                    <h6>Hotels</h6>
+                                    <h6>Cars</h6>
                                     <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
                                 </div>
                                 <div class="from-to__wrp">
                                     <div class="action__title">
-                                        <label for="">1. Aqaba - Jordan</label>
+                                        <label for="">1. AMMAN</label>
                                         <div class="action__btn">
                                             <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
                                             <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
@@ -196,8 +196,13 @@
                                             </div>
                                         </div>
                                         <div class="ft-input">
-                                            <label for="">Rooms</label>
-                                            <input type="text" placeholder="1" >
+                                            <label for="">Time</label>
+                                            <div class="ui calendar" id="time-piker">
+                                                <div class="ui input left icon">
+                                                  <i class="time icon"></i>
+                                                  <input type="text" placeholder="Time">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="from-to-bropdown">
@@ -225,65 +230,26 @@
                                 </div>
                                 <div class="dash-border"></div>
                                 <div class="top__title">
-                                    <h6>Itinerary Modifiers </h6>
-                                </div>
-                                <div class="select__wrp">
-                                    <h6>Travelers <span>(Up to 9 total)</span></h6>
-                                    <div class="mb-3">
-                                        <div class="action__title">
-                                            <label for="">1.</label>
-                                            <div class="action__btn">
-                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
-                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                        <div class="select__blk radio__select">
-                                            <select class="wide">
-                                                <option data-display="Adult">Adult</option>
-                                                <option value="1">Child </option>
-                                                <option value="2">Infant </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <div class="action__title">
-                                            <label for="">2. </label>
-                                            <div class="action__btn">
-                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
-                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                        <div class="select__blk radio__select">
-                                            <select class="wide">
-                                                <option data-display="Child">Child</option>
-                                                <option value="1">Adult </option>
-                                                <option value="2">Infant </option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dash-border"></div>
-                                <div class="top__title">
                                     <h6>Filter by:  </h6>
                                 </div>
                                 <div class="slider PriceRange__blk">
                                     <img src="assets/img/range-chart.svg" class="range-chart" alt="">
-                                    <p>Price Range</p>
+                                    <p>Price Per Day</p>
                                     <div class="range-slider">
                                         <span class="rangeValues"></span>
-                                        <input value="0" min="0" max="300" step="1" type="range">
-                                        <input value="300" min="0" max="300" step="1" type="range">
+                                        <input value="0" min="0" max="150" step="1" type="range">
+                                        <input value="150" min="0" max="150" step="1" type="range">
                                     </div>
                                  </div>
                                 <div class="dash-border"></div>
                                 <div class="checkBox__list">
-                                    <h6>Popular filters</h6>
+                                    <h6>Location</h6>
                                     <ul>
                                         <li>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-1">
                                                 <label class="form-check-label" for="ck-1">
-                                                    5 stars <span>7</span>
+                                                    Airport (in terminal) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -291,7 +257,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-2">
                                                 <label class="form-check-label" for="ck-2">
-                                                    Private bathroom <span>7</span>
+                                                    Airport (airport hotel) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -307,7 +273,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-4">
                                                 <label class="form-check-label" for="ck-4">
-                                                    Apartments <span>7</span>
+                                                    Airport (meet &greet) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -315,23 +281,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-5">
                                                 <label class="form-check-label" for="ck-5">
-                                                    Beach <span>7</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ck-6">
-                                                <label class="form-check-label" for="ck-6">
-                                                    Free Wifi <span>7</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ck-7">
-                                                <label class="form-check-label" for="ck-7">
-                                                    Breakfast & dinner included <span>7</span>
+                                                    All other locations <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -339,13 +289,13 @@
                                 </div>
                                 <div class="dash-border"></div>
                                 <div class="checkBox__list ">
-                                    <h6>Popular filters</h6>
+                                    <h6>Car specs</h6>
                                     <ul>
                                         <li>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ckk-1">
                                                 <label class="form-check-label" for="ckk-1">
-                                                    Deira <span>7</span>
+                                                    Air conditioning <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -353,47 +303,311 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ckk-2">
                                                 <label class="form-check-label" for="ckk-2">
-                                                    Private bathroom <span>7</span>
+                                                    4+ doors <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Electric cars</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-1">
+                                                <label class="form-check-label" for="ckke-1">
+                                                    Fully electric <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-3">
-                                                <label class="form-check-label" for="ckk-3">
-                                                    Free cancellation <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-2">
+                                                <label class="form-check-label" for="ckke-2">
+                                                    Hybrid <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-4">
-                                                <label class="form-check-label" for="ckk-4">
-                                                    Apartments <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-3">
+                                                <label class="form-check-label" for="ckke-3">
+                                                    Plug in hybrid <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Mileage</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="sda-1">
+                                                <label class="form-check-label" for="sda-1">
+                                                    Fully electric <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Transmission</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Tran-1">
+                                                <label class="form-check-label" for="Tran-1">
+                                                    Automatic <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-5">
-                                                <label class="form-check-label" for="ckk-5">
-                                                    Beach <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="Tran-2">
+                                                <label class="form-check-label" for="Tran-2">
+                                                    Manual <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Review score</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="score-1">
+                                                <label class="form-check-label" for="score-1">
+                                                    Superb:9+ <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-6">
-                                                <label class="form-check-label" for="ckk-6">
-                                                    Free Wifi <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="score-2">
+                                                <label class="form-check-label" for="score-2">
+                                                    Very good: 8+ <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-7">
-                                                <label class="form-check-label" for="ckk-7">
-                                                    Breakfast & dinner included <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="score-3">
+                                                <label class="form-check-label" for="score-3">
+                                                    Good: 7+ <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Car category</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-1">
+                                                <label class="form-check-label" for="Carr-1">
+                                                    Small <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-2">
+                                                <label class="form-check-label" for="Carr-2">
+                                                    Medium <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-3">
+                                                <label class="form-check-label" for="Carr-3">
+                                                    Premium <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-4">
+                                                <label class="form-check-label" for="Carr-4">
+                                                    Minivans <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="score-5">
+                                                <label class="form-check-label" for="score-5">
+                                                    SUVs <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Fuel policy</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Fuelp-1">
+                                                <label class="form-check-label" for="Fuelp-1">
+                                                    Like for like <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Deposit required at pick-up</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-1">
+                                                <label class="form-check-label" for="Depositt-1">
+                                                    $0 - $200 <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-2">
+                                                <label class="form-check-label" for="Depositt-2">
+                                                    $200 - $400 <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-3">
+                                                <label class="form-check-label" for="Depositt-3">
+                                                    JOD 400+ <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Supplier</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-1">
+                                                <label class="form-check-label" for="Supplierr-1">
+                                                    Ace <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-2">
+                                                <label class="form-check-label" for="Supplierr-2">
+                                                    Autounion <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-3">
+                                                <label class="form-check-label" for="Supplierr-3">
+                                                    Avis  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-4">
+                                                <label class="form-check-label" for="Supplierr-4">
+                                                    Budget <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-5">
+                                                <label class="form-check-label" for="Supplierr-5">
+                                                    Carwiz  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-6">
+                                                <label class="form-check-label" for="Supplierr-6">
+                                                    Dollar <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-7">
+                                                <label class="form-check-label" for="Supplierr-7">
+                                                    Europcar  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-8">
+                                                <label class="form-check-label" for="Supplierr-8">
+                                                    Goldcar <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-9">
+                                                <label class="form-check-label" for="Supplierr-9">
+                                                    Green Motion  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-10">
+                                                <label class="form-check-label" for="Supplierr-10">
+                                                    Payless <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-11">
+                                                <label class="form-check-label" for="Supplierr-11">
+                                                    Sixt  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-12">
+                                                <label class="form-check-label" for="Supplierr-12">
+                                                    Surprice  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-13">
+                                                <label class="form-check-label" for="Supplierr-13">
+                                                    Thrifty  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-14">
+                                                <label class="form-check-label" for="Supplierr-14">
+                                                    Wheego <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -530,6 +744,11 @@ $('#rangestart').calendar({
 $('#rangeend').calendar({
   type: 'date',
   startCalendar: $('#rangestart')
+});
+
+$('#time-piker').calendar({
+  ampm: false,
+  type: 'time'
 });
 </script>
 

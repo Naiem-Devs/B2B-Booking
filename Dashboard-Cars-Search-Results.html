@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard-Hotels-Search</title>
+        <title>Dashboard- Cars| Search | Results</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
@@ -17,12 +17,12 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
-    <body class="btm__space box_design">
+    <body class="btm__space f-width">
 
        
     <!-- header-area START -->
     <div class="header-area">
-        <div class="container lg">
+        <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="header__content">
                     <div class="logo">
@@ -144,18 +144,18 @@
 
         <!--------- Section START ---------->
         <section class="box-body ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="side__bar   ">
+            <div class="container-fluid">
+                <div class="box__wrp">
+                    <div class="box__columns1">
+                        <div class="side__bar ">
                             <div class="side__content scroll-style">
                                 <div class="top__title">
-                                    <h6>Hotels</h6>
+                                    <h6>Cars</h6>
                                     <button type="button"><img src="assets/img/filter-Icon.svg" alt=""></button>
                                 </div>
                                 <div class="from-to__wrp">
                                     <div class="action__title">
-                                        <label for="">1. Aqaba - Jordan</label>
+                                        <label for="">1. AMMAN</label>
                                         <div class="action__btn">
                                             <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
                                             <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
@@ -168,12 +168,33 @@
                                         </div>
                                         <div class="ft-input lg">
                                             <label for="">DATE</label>
-                                            
-                                            <input type="text" placeholder="14 OCT - 16 OCT">
+                                            <div class="two fields">
+                                                <div class="field calendarStart">
+                                                  <div class="ui calendar" id="rangestart">
+                                                    <div class="ui input left icon">
+                                                      <i class="calendar icon"></i>
+                                                      <input type="text" placeholder="Start">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="field">
+                                                  <div class="ui calendar" id="rangeend">
+                                                    <div class="ui input left icon">
+                                                      <i class="calendar icon"></i>
+                                                      <input type="text" placeholder="End">
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="ft-input">
-                                            <label for="">Rooms</label>
-                                            <input type="text" placeholder="1" >
+                                            <label for="">Time</label>
+                                            <div class="ui calendar" id="time-piker">
+                                                <div class="ui input left icon">
+                                                  <i class="time icon"></i>
+                                                  <input type="text" placeholder="Time">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="from-to-bropdown">
@@ -201,69 +222,26 @@
                                 </div>
                                 <div class="dash-border"></div>
                                 <div class="top__title">
-                                    <h6>Itinerary Modifiers </h6>
-                                </div>
-                                <div class="select__wrp">
-                                    <h6>Travelers <span>(Up to 9 total)</span></h6>
-                                    <div class="mb-3">
-                                        <div class="action__title">
-                                            <label for="">1.</label>
-                                            <div class="action__btn">
-                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
-                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                        <div class="select__blk radio__select">
-                                            <select class="wide">
-                                                <option data-display="Adult">Adult</option>
-                                                <option value="1">Some </option>
-                                                <option value="2">Another </option>
-                                                <option value="3" disabled> disabled</option>
-                                                <option value="4">Potato</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <div class="action__title">
-                                            <label for="">2. </label>
-                                            <div class="action__btn">
-                                                <button type="button"><img src="assets/img/plus-Icon.svg" alt=""></button>
-                                                <button type="button"><img src="assets/img/delet-Icon.svg" alt=""></button>
-                                            </div>
-                                        </div>
-                                        <div class="select__blk radio__select">
-                                            <select class="wide">
-                                                <option data-display="Child">Child</option>
-                                                <option value="1">Some </option>
-                                                <option value="2">Another </option>
-                                                <option value="3" disabled> disabled</option>
-                                                <option value="4">Potato</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dash-border"></div>
-                                <div class="top__title">
                                     <h6>Filter by:  </h6>
                                 </div>
                                 <div class="slider PriceRange__blk">
                                     <img src="assets/img/range-chart.svg" class="range-chart" alt="">
-                                    <p>Price Range</p>
+                                    <p>Price Per Day</p>
                                     <div class="range-slider">
                                         <span class="rangeValues"></span>
-                                        <input value="0" min="0" max="300" step="1" type="range">
-                                        <input value="300" min="0" max="300" step="1" type="range">
+                                        <input value="0" min="0" max="150" step="1" type="range">
+                                        <input value="150" min="0" max="150" step="1" type="range">
                                     </div>
                                  </div>
                                 <div class="dash-border"></div>
                                 <div class="checkBox__list">
-                                    <h6>Popular filters</h6>
+                                    <h6>Location</h6>
                                     <ul>
                                         <li>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-1">
                                                 <label class="form-check-label" for="ck-1">
-                                                    5 stars <span>7</span>
+                                                    Airport (in terminal) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -271,7 +249,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-2">
                                                 <label class="form-check-label" for="ck-2">
-                                                    Private bathroom <span>7</span>
+                                                    Airport (airport hotel) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -287,7 +265,7 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-4">
                                                 <label class="form-check-label" for="ck-4">
-                                                    Apartments <span>7</span>
+                                                    Airport (meet &greet) <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -295,37 +273,21 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ck-5">
                                                 <label class="form-check-label" for="ck-5">
-                                                    Beach <span>7</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ck-6">
-                                                <label class="form-check-label" for="ck-6">
-                                                    Free Wifi <span>7</span>
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ck-7">
-                                                <label class="form-check-label" for="ck-7">
-                                                    Breakfast & dinner included <span>7</span>
+                                                    All other locations <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="dash-border"></div>
-                                <div class="checkBox__list">
-                                    <h6>Popular filters</h6>
+                                <div class="checkBox__list ">
+                                    <h6>Car specs</h6>
                                     <ul>
                                         <li>
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ckk-1">
                                                 <label class="form-check-label" for="ckk-1">
-                                                    Deira <span>7</span>
+                                                    Air conditioning <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -333,47 +295,311 @@
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="ckk-2">
                                                 <label class="form-check-label" for="ckk-2">
-                                                    Private bathroom <span>7</span>
+                                                    4+ doors <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Electric cars</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-1">
+                                                <label class="form-check-label" for="ckke-1">
+                                                    Fully electric <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-3">
-                                                <label class="form-check-label" for="ckk-3">
-                                                    Free cancellation <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-2">
+                                                <label class="form-check-label" for="ckke-2">
+                                                    Hybrid <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-4">
-                                                <label class="form-check-label" for="ckk-4">
-                                                    Apartments <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="ckke-3">
+                                                <label class="form-check-label" for="ckke-3">
+                                                    Plug in hybrid <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Mileage</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="sda-1">
+                                                <label class="form-check-label" for="sda-1">
+                                                    Fully electric <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Transmission</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Tran-1">
+                                                <label class="form-check-label" for="Tran-1">
+                                                    Automatic <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-5">
-                                                <label class="form-check-label" for="ckk-5">
-                                                    Beach <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="Tran-2">
+                                                <label class="form-check-label" for="Tran-2">
+                                                    Manual <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Review score</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="score-1">
+                                                <label class="form-check-label" for="score-1">
+                                                    Superb:9+ <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-6">
-                                                <label class="form-check-label" for="ckk-6">
-                                                    Free Wifi <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="score-2">
+                                                <label class="form-check-label" for="score-2">
+                                                    Very good: 8+ <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="ckk-7">
-                                                <label class="form-check-label" for="ckk-7">
-                                                    Breakfast & dinner included <span>7</span>
+                                                <input class="form-check-input" type="checkbox" value="" id="score-3">
+                                                <label class="form-check-label" for="score-3">
+                                                    Good: 7+ <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Car category</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-1">
+                                                <label class="form-check-label" for="Carr-1">
+                                                    Small <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-2">
+                                                <label class="form-check-label" for="Carr-2">
+                                                    Medium <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-3">
+                                                <label class="form-check-label" for="Carr-3">
+                                                    Premium <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Carr-4">
+                                                <label class="form-check-label" for="Carr-4">
+                                                    Minivans <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="score-5">
+                                                <label class="form-check-label" for="score-5">
+                                                    SUVs <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Fuel policy</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Fuelp-1">
+                                                <label class="form-check-label" for="Fuelp-1">
+                                                    Like for like <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Deposit required at pick-up</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-1">
+                                                <label class="form-check-label" for="Depositt-1">
+                                                    $0 - $200 <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-2">
+                                                <label class="form-check-label" for="Depositt-2">
+                                                    $200 - $400 <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Depositt-3">
+                                                <label class="form-check-label" for="Depositt-3">
+                                                    JOD 400+ <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dash-border"></div>
+                                <div class="checkBox__list ">
+                                    <h6>Supplier</h6>
+                                    <ul>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-1">
+                                                <label class="form-check-label" for="Supplierr-1">
+                                                    Ace <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-2">
+                                                <label class="form-check-label" for="Supplierr-2">
+                                                    Autounion <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-3">
+                                                <label class="form-check-label" for="Supplierr-3">
+                                                    Avis  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-4">
+                                                <label class="form-check-label" for="Supplierr-4">
+                                                    Budget <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-5">
+                                                <label class="form-check-label" for="Supplierr-5">
+                                                    Carwiz  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-6">
+                                                <label class="form-check-label" for="Supplierr-6">
+                                                    Dollar <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-7">
+                                                <label class="form-check-label" for="Supplierr-7">
+                                                    Europcar  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-8">
+                                                <label class="form-check-label" for="Supplierr-8">
+                                                    Goldcar <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-9">
+                                                <label class="form-check-label" for="Supplierr-9">
+                                                    Green Motion  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-10">
+                                                <label class="form-check-label" for="Supplierr-10">
+                                                    Payless <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-11">
+                                                <label class="form-check-label" for="Supplierr-11">
+                                                    Sixt  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-12">
+                                                <label class="form-check-label" for="Supplierr-12">
+                                                    Surprice  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-13">
+                                                <label class="form-check-label" for="Supplierr-13">
+                                                    Thrifty  <span>7</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="Supplierr-14">
+                                                <label class="form-check-label" for="Supplierr-14">
+                                                    Wheego <span>7</span>
                                                 </label>
                                             </div>
                                         </li>
@@ -386,7 +612,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="box__columns2">
                         <div class="hotel__wrp scroll-style">
                             <div class=" hotel__title">
                                 <p>35 Hotels options <i class="fal fa-info-circle"></i></p>
@@ -404,121 +630,121 @@
                             <div class="box__style hotel__blk">
                                 <div class="flex">
                                     <i>
-                                        <img src="assets/img/hotel-img.png" alt="">
+                                        <img src="assets/img/car-img.png" alt="">
                                     </i>
                                     <div class="hotel__info">
-                                        <h6>East hotel  <span>Very good 8.8</span></h6>
-                                        <span>Amman - Jordan</span>
+                                        <h6>Ford EcoSport  <span>Very good 9.0</span></h6>
+                                        <span>Queen Alia airport</span>
                                         <ul>
-                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
-                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
-                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                            <li><i><img src="assets/img/user-Icon.svg" alt=""></i> 5 Seats</li>
+                                            <li><i><img src="assets/img/bag-Icon.svg" alt=""></i> 1 Large bag</li>
+                                            <li><i><img src="assets/img/auto-img.svg" alt=""></i> Automatic</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="hotel__btm">
-                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <p class="green"><i class="fas fa-circle"></i> Free Cancellation </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" >Select</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="box__style hotel__blk">
                                 <div class="flex">
                                     <i>
-                                        <img src="assets/img/hotel-img.png" alt="">
+                                        <img src="assets/img/car-img.png" alt="">
                                     </i>
                                     <div class="hotel__info">
-                                        <h6>East hotel  <span>Very good 8.8</span></h6>
-                                        <span>Amman - Jordan</span>
+                                        <h6>Ford EcoSport  <span>Very good 9.0</span></h6>
+                                        <span>Queen Alia airport</span>
                                         <ul>
-                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
-                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
-                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                            <li><i><img src="assets/img/user-Icon.svg" alt=""></i> 5 Seats</li>
+                                            <li><i><img src="assets/img/bag-Icon.svg" alt=""></i> 1 Large bag</li>
+                                            <li><i><img src="assets/img/auto-img.svg" alt=""></i> Automatic</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="hotel__btm">
-                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <p class="green"><i class="fas fa-circle"></i> Free Cancellation </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" >Select</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="box__style hotel__blk">
                                 <div class="flex">
                                     <i>
-                                        <img src="assets/img/hotel-img.png" alt="">
+                                        <img src="assets/img/car-img.png" alt="">
                                     </i>
                                     <div class="hotel__info">
-                                        <h6>East hotel  <span>Very good 8.8</span></h6>
-                                        <span>Amman - Jordan</span>
+                                        <h6>Ford EcoSport  <span>Very good 9.0</span></h6>
+                                        <span>Queen Alia airport</span>
                                         <ul>
-                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
-                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
-                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                            <li><i><img src="assets/img/user-Icon.svg" alt=""></i> 5 Seats</li>
+                                            <li><i><img src="assets/img/bag-Icon.svg" alt=""></i> 1 Large bag</li>
+                                            <li><i><img src="assets/img/auto-img.svg" alt=""></i> Automatic</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="hotel__btm">
-                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <p class="green"><i class="fas fa-circle"></i> Free Cancellation </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" >Select</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="box__style hotel__blk">
                                 <div class="flex">
                                     <i>
-                                        <img src="assets/img/hotel-img.png" alt="">
+                                        <img src="assets/img/car-img.png" alt="">
                                     </i>
                                     <div class="hotel__info">
-                                        <h6>East hotel  <span>Very good 8.8</span></h6>
-                                        <span>Amman - Jordan</span>
+                                        <h6>Ford EcoSport  <span>Very good 9.0</span></h6>
+                                        <span>Queen Alia airport</span>
                                         <ul>
-                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
-                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
-                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                            <li><i><img src="assets/img/user-Icon.svg" alt=""></i> 5 Seats</li>
+                                            <li><i><img src="assets/img/bag-Icon.svg" alt=""></i> 1 Large bag</li>
+                                            <li><i><img src="assets/img/auto-img.svg" alt=""></i> Automatic</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="hotel__btm">
-                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <p class="green"><i class="fas fa-circle"></i> Free Cancellation </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" >Select</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="box__style hotel__blk">
                                 <div class="flex">
                                     <i>
-                                        <img src="assets/img/hotel-img.png" alt="">
+                                        <img src="assets/img/car-img.png" alt="">
                                     </i>
                                     <div class="hotel__info">
-                                        <h6>East hotel  <span>Very good 8.8</span></h6>
-                                        <span>Amman - Jordan</span>
+                                        <h6>Ford EcoSport  <span>Very good 9.0</span></h6>
+                                        <span>Queen Alia airport</span>
                                         <ul>
-                                            <li><i><img src="assets/img/fi_wifi.svg" alt=""></i> Free Wi-Fi</li>
-                                            <li><i><img src="assets/img/fi_coffee.svg" alt=""></i> Breakfast included</li>
-                                            <li><i><img src="assets/img/check.svg" alt=""></i> Free cancellation</li>
+                                            <li><i><img src="assets/img/user-Icon.svg" alt=""></i> 5 Seats</li>
+                                            <li><i><img src="assets/img/bag-Icon.svg" alt=""></i> 1 Large bag</li>
+                                            <li><i><img src="assets/img/auto-img.svg" alt=""></i> Automatic</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="hotel__btm">
-                                    <p><i class="fas fa-circle"></i> Only 4 rooms available </p>
+                                    <p class="green"><i class="fas fa-circle"></i> Free Cancellation </p>
                                     <div class="">
                                         <h6>$160</h6>
-                                        <button type="button">Select</button>
+                                        <a href="" >Select</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
+                    <div class="box__columns3">
                         <div class="map__wrp">
                             <div style="width: 100%" class="map__blk long__map scroll-style">
                                 <iframe width="2000" height="1400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2000&amp;height=1400&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=18&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe>
@@ -642,7 +868,19 @@
         <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
         <script src="assets/js/main.js"></script>
 <script>
+$('#rangestart').calendar({
+  type: 'date',
+  endCalendar: $('#rangeend')
+});
+$('#rangeend').calendar({
+  type: 'date',
+  startCalendar: $('#rangestart')
+});
 
+$('#time-piker').calendar({
+  ampm: false,
+  type: 'time'
+});
 </script>
 
 <script>

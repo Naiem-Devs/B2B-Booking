@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>login page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body class="no-bg">
+
+       
+
+    <main>
+
+
+        <!---------login Section START ---------->
+        <section class="login-page">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <div class="login__img">
+                            <i><img src="assets/img/login-img-1.svg" alt=""></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="login__content">
+                            <h1>Login| <span>Agent</span></h1>
+                            <form action="">
+                                <div class="login__form">
+                                    <div class="input__blk valid">
+                                        <label for="">Agent Code</label>
+                                        <div class="input">
+                                            <i><img src="assets/img/fi_home.svg" alt=""></i>
+                                            <input type="text" placeholder="Agent Code">
+                                        </div>
+                                    </div>   
+                                    <div class="input__blk inValid">
+                                        <label for="">Username\ Email</label>
+                                        <div class="input">
+                                            <i><img src="assets/img/fi_user.svg" alt=""></i>
+                                            <input type="text" placeholder="Username\Email">
+                                        </div>
+                                        <div class="inValid__text">
+                                           <img src="assets/img/close-circle.svg" alt=""> Agent code is not exist
+                                        </div>
+                                    </div>   
+                                    <div class="input__blk">
+                                        <label for="">Password</label>
+                                        <div class="input">
+                                            <i><img src="assets/img/fi_key.svg" alt=""></i>
+                                            <input type="password" placeholder="Password" id="#password">
+                                            <span class="eye" onclick="myFunction()">
+                                                <img src="assets/img/eye.svg" class="eye-img" alt="">
+                                                <img src="assets/img/eye-hide.svg" class="eye-hide" alt="">
+                                            </span>
+                                        </div>
+                                    </div> 
+                                    <a href="#" class="F__link">Forget Password?</a>  
+                                    <button type="button" class="thm_btn disabled"><img src="assets/img/fi_arrow-right.svg" alt=""> Login</button>
+                                    <a href="#" class="lost__link">Lost Access?</a> 
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--------login- Section End ---------->
+
+
+    </main>
+
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+<script>
+$(".eye").click(function () {
+    $(this).toggleClass("show")
+    var password = document.getElementById("password")
+    if (this.classList.contains('show')) {
+        password.setAttribute('type', 'text');
+
+    } else {
+    myInput.setAttribute('type', 'password');
+    };
+})
+</script>
+    </body>
+</html>
+
