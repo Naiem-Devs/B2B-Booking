@@ -141,6 +141,8 @@ li {
     background: #0E2E43;
     color: #fff;
     border-radius: 30px;
+    display: inline-block;
+    padding: 8px 24px;
 }
 
 /* default-css END 
@@ -169,6 +171,10 @@ li {
  .box__columns1{
     width: 320px;
     flex-shrink: 0;
+}
+
+.box__columns2-3 {
+    width: calc(100% - 350px);
 }
  .box__columns2{
     width: 350px;
@@ -768,9 +774,13 @@ li {
 /* scroll-style */
 .scroll-style::-webkit-scrollbar{width: 8px;border-radius: 20px;position: relative;height: 8px;}
 .scroll-style::-webkit-scrollbar-thumb{background: #C1C1C1;border-radius: 20px;}
+
+.scroll-style-none::-webkit-scrollbar {
+    display: none;
+}
 .scroll-style::-webkit-scrollbar-button{
     background: none;
-    
+    display: none;
 }
 /* scroll-style */
 
@@ -951,15 +961,15 @@ i.time.icon {
 }
 
 .hotel__title p {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
 }
 .fal {
 }
 .fa-info-circle {
 }
-.hotel__title .select__blk {width: max-content;display: flex;align-items: center;font-size: 12px;color: #6B7280;height: auto;gap: 5px;}
-.select__blk.no-border .nice-select {border: none;padding: 0;font-size: 12px;color: #6B7280;height: auto;}
+.hotel__title .select__blk {width: max-content;display: flex;align-items: center;font-size: 14px;color: #6B7280;height: auto;gap: 5px;}
+.select__blk.no-border .nice-select {border: none;padding: 0;font-size: 14px;color: #6B7280;height: auto;}
 
 .select__blk.no-border .nice-select:after {
     display: none;
@@ -1360,6 +1370,717 @@ i.time.icon {
 }
 
 /*============login page End =============*/
+
+
+/*============flight__slider Area Start =============*/
+.flight__slider {margin-top: 20px;padding: 0px 50px;margin-bottom: 20px;}
+
+.flight__slider .owl-nav {display: flex;align-items: center;justify-content: space-between;width: 96%;position: absolute;top: 50%;left: 2%;transform: translateY(-50%);font-size: 20px;z-index: 1;}
+.flight__slider__blk {text-align: center;font-size: 14px;position: relative;z-index: 9;padding: 20px 0;isolation: isolate;}
+
+.flight__slider__blk:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: var(--thmColor);
+    bottom: 0px;
+    left: 0;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.center .flight__slider__blk:after {
+    opacity: 1;
+}
+
+.flight__slider__blk p {
+    margin: 0;
+}
+
+.flight__slider__blk span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+/*============ Area End =============*/
+
+
+/*============Trip Area Start =============*/
+.Trip__wrp {display: flex;gap: 60px;padding-right: 34px;margin-bottom: 10px;}
+
+.Trip__wrp.v2 {
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+}
+
+.Trip__list__two {
+    height: 58vh;
+    overflow: scroll;
+}
+
+.Trip__list {
+    height: 57vh;
+    overflow: auto;
+}
+.Trip__details {width: 100%;}
+
+.Trip__wrp.v2 .Trip__details .link__btn {
+    position: absolute;
+    right: 20px;
+}
+.Trip__name {display: flex;align-items: center;gap: 10px;}
+
+.Trip__name label {
+    font-weight: 500;
+}
+
+.Trip__name label span {
+    font-weight: 400;
+}
+
+.Trip__name i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.Trip__time {display: flex;justify-content: end;gap: 40px;}
+
+.Trip__wrp.v2 .Trip__time {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Trip__time p {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.Trip__time b {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.Trip__time span {
+    color: var(--offColor);
+    margin-bottom: 3px;
+    display: block;
+}
+.text-center {
+}
+.Trip__stop {position: relative;}
+
+.Trip__stop i {
+    position: absolute;
+    left: 50%;
+    top: 3px;
+    color: #D9D9D9;
+}
+.fas {
+}
+.fa-circle {
+}
+.text-end {
+}
+.px-4 {
+}
+.link__btn {color: #38439B;font-weight: 500;}
+.Trip__pack {display: flex;gap: 60px;flex-shrink: 0;}
+
+.Trip__wrp.v2 .Trip__pack {
+    flex-direction: column;
+    gap: 10px;
+}
+.Trip__pack__blk {text-align: center;}
+
+.Trip__wrp.v2 .Trip__pack__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.Trip__wrp.v2 .Trip__pack__blk button {
+    margin: 0;
+}
+
+.Trip__wrp.v2 .Trip__pack__blk .flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.Trip__wrp.v2 .Trip__pack__blk .flex h6 {
+    margin: 0;
+}
+
+.Trip__pack__blk span {
+    color: var(--offColor);
+}
+
+.Trip__pack__blk button {width: 85px;height: 28px;display: flex;align-items: center;justify-content: center;margin: 12px auto 20px;line-height: 1;font-size: 14px;}
+.thm_btn {
+}
+.form-check {
+}
+.form-check-input {
+}
+.form-check-label {
+}
+.border__btn {border: 1px solid;border-radius: 30px;padding: 8px 24px;}
+
+/*============Trip Modal End =============*/
+.Oneway__modal {padding: 10px;}
+.btn-close {position: absolute;right: 12px;}
+.icon__title {
+}
+
+.icon__title h5 {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon__title h5 span {
+    font-size: 16px;
+    color: var(--offColor);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.icon__title h5 span i {
+    font-size: 5px;
+    line-height: 1;
+}
+
+.icon__title h5 > i {
+    font-size: 22px;
+    color: var(--offColor);
+}
+
+.icon__title label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: var(--offColor);
+    margin-bottom: 14px;
+}
+.fal {
+}
+.fa-arrow-right {
+}
+.fas {
+}
+.fa-circle {
+}
+.trip__fd {margin-top: 30px;}
+
+.trip__fd > h6 {
+    margin-bottom: 10px;
+}
+.trip__fd__box {border: 1px solid #D1D5DB;border-radius: 10px;padding: 10px;overflow: hidden;}
+
+.trip__fd__box > button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 30px 0;
+}
+
+.trip__fd__box > button span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.Trip__name {
+}
+.Trip__time {
+}
+.mb-3 {
+}
+.text-center {
+}
+.Trip__stop {
+}
+.text-end {
+}
+.Trip__time__line {margin-top: 36px;display: none;}
+
+.Trip__time__line ul li p {
+    color: #4B5563;
+}
+
+.Trip__time__line ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.Trip__time__line ul:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 50px);
+    background: #1C1C1C;
+    left: 112px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.Trip__time__line ul li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.Trip__time__line ul li > i {}
+
+.Trip__time__line ul li > i {
+    position: relative;
+    z-index: 9;
+    color: var(--thmColor);
+    border: 1px solid #9CA3AF;
+    border-radius: 50%;
+    width: 18px;
+}
+
+.Trip__time__line ul li b {
+    width: 75px;
+    font-weight: 600;
+}
+
+.Trip__time__line ul li span {
+    text-align: center;
+    display: block;
+    color: var(--offColor);
+}
+
+.Trip__time__line ul li span img {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3px;
+}
+.link__btn {
+}
+.trip__fd__box > button .More {
+}
+.far {
+}
+.fa-chevron-down {
+}
+.trip__fd__box > button .Hide {display: none;}
+.fa-chevron-up {
+}
+
+.brands__flight {
+}
+
+.h__66 {
+    height: 66vh;
+}
+
+.overflow__scroll {
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+.brands__flight > a {
+    text-align: right;
+    display: block;
+    margin: 10px 0 20px;
+}
+.brands__flight__slider {padding: 0 10px;}
+
+.brands__flight__slider .owl-stage-outer {
+}
+.owl-carousel {
+}
+
+.brands__flight__slider .owl-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    font-size: 24px;
+}
+.bf__slide {background: #fff;padding: 20px;border-radius: 16px;}
+
+.bf__slide > span {
+    color: #6B7280;
+    display: block;
+    margin: 16px 0;
+}
+
+.bf__slide ul {}
+
+.bf__slide ul li {
+    color: #9CA3AF;
+    line-height: 1.7;
+}
+
+.bf__slide h6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bf__slide h6 a {
+    display: flex;
+    font-weight: 400;
+    gap: 5px;
+    color: var(--textColor);
+}
+.bf__slide__btm {display: flex;flex-wrap: wrap;align-items: center;justify-content: space-between;gap: 4px 0;}
+
+.bf__slide__btm a {
+    flex-basis: 100%;
+}
+
+.bf__slide__btm h6 {
+    margin: 0;
+}
+.thm_btn {
+}
+.link__btn {
+}
+.Standard__eco {margin-bottom: 40px;}
+
+.Standard__eco ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    color: var(--offColor);
+}
+
+.Standard__eco ul li h6 {
+    color: #111827;
+}
+
+.Standard__eco ul li p {
+    margin-bottom: 4px;
+}
+.box__style {
+}
+
+.Standard__eco ul {
+    margin: 20px 0 30px;
+}
+.label__text {position: relative;}
+
+.label__text span {
+    position: absolute;
+    width: max-content;
+    display: block;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.sEco__left {width: 70px;}
+
+.sEco__left i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sEco__left span {
+    color: var(--offColor);
+    font-weight: 500;
+    display: block;
+    max-width: 50px;
+}
+.sEco__blk {border: 1px solid #D1D5DB;border-radius: 10px;padding: 20px;}
+
+.sEco__blk p {
+    color: var(--offColor);
+}
+/*============Trip Area End =============*/
+
+
+/*============Economy Area Start =============*/
+.Economy__modal__content {border-top: 1px solid #000;margin-top: 20px;}
+.table__blk {padding: 20px 0;border-bottom: 1px solid #0003;}
+
+.table__blk {}
+
+.table__blk td span {
+    color: #000;
+}
+
+.table__blk td {
+    color: var(--offColor);
+}
+
+.table__blk th {
+    font-weight: 500;
+}
+
+.table__blk b {
+    font-weight: 500;
+    color: #4B5563;
+}
+.table {
+}
+.Services__list {padding-top: 20px;}
+
+.Services__list ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--offColor);
+    margin-bottom: 10px;
+}
+
+.Services__list ul li span {
+    display: block;
+    margin-left: auto;
+}
+
+.Services__list ul {
+    margin-top: 20px;
+}
+
+.Baggage__table{}
+
+.Baggage__table td img {margin-right: 4px;}
+.Amount__table{}
+
+.Amount__table .table {
+    max-width: 490px;
+}
+
+.FlightPolicy__Modal{
+    padding: 40px;
+    position: relative;
+}
+
+.FlightPolicy__Modal button {
+    top: 10px;
+}
+
+.FlightPolicy__Modal h5 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/*============Economy Area End =============*/
+
+
+/*============Travelers Area Start =============*/
+.Travelers-area {position: fixed;top: 0;/* right: -100%; */background: #fff;z-index: 999;width: 90%;height: 100%;box-shadow: -5px 0 10px #0002;border-top-left-radius: 30px;border-bottom-left-radius: 30px;padding-top: 30px;padding-left: 50px;right: 0;display: none;}
+
+.Travelers-area.active {
+    right: 0;
+}
+.container {
+}
+.Travelers-info {
+}
+
+.Travelers-info > button {
+    font-size: 28px;
+    position: absolute;
+    left: 40px;
+}
+.Travelers-infoa .close__btn {
+}
+.fal {
+}
+.fa-times {
+}
+.Travelers-info__btn {position: absolute;right: 0;align-items: end;gap: 20px;}
+
+.Travelers-info__btn button {
+    border-radius: 30px 0 0px  30px   !important;
+    background: #EFF6FE;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.Travelers-info__btn button .check {
+    display: block;
+}
+
+.Travelers-info__btn button .check + img {
+    display: none;
+}
+
+.Travelers-info__btn button.active .check + img {
+    display: block;
+}
+
+.Travelers-info__btn button .check {}
+
+.Travelers-info__btn button.active .check {
+    display: none;
+}
+
+.Travelers-info__btn button.active {
+    background: var(--blueColor) !important;
+    width: 60px;
+}
+
+.Travelers-info__btn button.active img {
+    filter: brightness(13.5);
+}
+.nav {
+}
+.flex-column {
+}
+.nav-pills {
+}
+.nav-link {
+}
+.active {
+}
+.check {
+}
+.tab-content {
+}
+.tab-pane {
+}
+.fade {
+}
+.show {
+}
+.TravInfo__tab {max-width: 800px;}
+
+.TravInfo__tab > button,.Payment__tab button {
+    height: 52px;
+    width: 100%;
+    max-width: 300px;
+    background: #D1D5DB;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.TravInfo__tab h4 {
+    margin-bottom: 30px;
+}
+.parson__btns {
+    margin-bottom: 50px;
+}
+
+.parson__btns ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 680px;
+    justify-content: space-between;
+}
+
+.parson__btns ul li {
+    width: 31%;
+}
+
+.parson__btns ul li button {
+    height: 100px;
+    background: #EFF6FE;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+}
+.check__pr {display: none;}
+.worr__pr {display: none;}
+.row {
+}
+.col-lg-6 {
+}
+.input__blk {
+}
+.input-number {
+}
+.tel {
+}
+.input {
+}
+.inActive {
+}
+.fa-check {
+}
+.Payment__tab {max-width: 680px;}
+.Booking_ref {margin: 20px 0 30px;}
+
+.Booking_ref h6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+.Payment__time {
+}
+
+.Payment__time ul {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #D1D5DB;
+    gap: 20px 0;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.Payment__time ul li {
+    width: 33%;
+}
+.Wallets__opt {margin-top: 30px;}
+
+.Wallets__opt > h6 {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.Wallets__blk {display: flex;justify-content: space-between;border: 1px solid #D1D5DB;border-radius: 10px;padding: 10px;margin-bottom: 10px;}
+
+.Wallets__blk span {
+    display: block;
+    color: var(--offColor);
+}
+.Active {
+}
+/*============Travelers Area End =============*/
+
+
+/*============ Area Start =============*/
+
+/*============ Area End =============*/
 
 
 /*============ Area Start =============*/

@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard-Flights-Search</title>
+        <title>Dashboard- Flights   One way Trips Results  Details</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<link rel="shortcut icon" type="image/x-icon" href="#">
         <!-- Place favicon.ico in the root directory -->
         
 		<!-- CSS here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/23.0.0/css/intlTelInput.css"  />
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -486,511 +487,323 @@
                                 <span>DXB <i class="far fa-arrow-right"></i> AMM</span>
                             </div>
                         </div>
-                        <div class=" hotel__title box__style rounded-4 py-2">
-                            <p>35 Hotels options <i class="fal fa-info-circle"></i></p>
-                            <div class="select__blk no-border">
-                                <label for="">sort by : </label>
-                                <select class="">
-                                    <option data-display="price..">Total </option>
-                                    <option value="1">Some </option>
-                                    <option value="2">Another </option>
-                                    <option value="3" disabled> disabled </option>
-                                    <option value="4">Potato</option>
-                                  </select>
-                            </div>
-                        </div>
-                        <div class="Trip__list scroll-style">
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class=" hotel__title box__style rounded-4 py-2">
+                                    <p>35 Hotels options <i class="fal fa-info-circle"></i></p>
+                                    <div class="select__blk no-border">
+                                        <label for="">sort by : </label>
+                                        <select class="">
+                                            <option data-display="price..">Total </option>
+                                            <option value="1">Some </option>
+                                            <option value="2">Another </option>
+                                            <option value="3" disabled> disabled </option>
+                                            <option value="4">Potato</option>
+                                          </select>
                                     </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                                </div>
+                                <div class="Trip__list__two scroll-style">
+                                    <div class="Trip__wrp v2 box__style">
+                                        <div class="Trip__details">
+                                            <a href="#" class="link__btn" data-bs-toggle="modal" data-bs-target="#oneWay"><img src="assets/img/send.svg" alt=""> Trip path</a>
+                                            <div class="Trip__name">
+                                                <i><img src="assets/img/trip-img.png" alt=""></i>
+                                                <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
+                                            </div>
+                                            <div class="Trip__time">
+                                                <div class="">
+                                                    <span>09:00 PM</span>
+                                                    <p>OCT,13 2024</p>
+                                                    <b>PKX</b>
+                                                </div>
+                                                <div class="text-center">
+                                                    <b>1 stop (DOH)</b>
+                                                    <span>01:55 Hrs </span>
+                                                    <div class="Trip__stop">
+                                                        <i class="fas fa-circle"></i>
+                                                        <img src="assets/img/Line-right.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span>12:00 AM</span>
+                                                    <p>OCT,14 2024</p>
+                                                    <b>HKG</b>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
-                                    </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn" data-bs-toggle="modal" data-bs-target="#oneWay"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2">
-                                            <label class="form-check-label" for="flexCheckDefault-2">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                                        <div class="Trip__pack">
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="thm_btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
                                     </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-3">
-                                            <label class="form-check-label" for="flexCheckDefault-3">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-4">
-                                            <label class="form-check-label" for="flexCheckDefault-4">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                                    <div class="Trip__wrp v2 box__style">
+                                        <div class="Trip__details">
+                                            <a href="#" class="link__btn" data-bs-toggle="modal" data-bs-target="#oneWay"><img src="assets/img/send.svg" alt=""> Trip path</a>
+                                            <div class="Trip__name">
+                                                <i><img src="assets/img/trip-img.png" alt=""></i>
+                                                <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
+                                            </div>
+                                            <div class="Trip__time">
+                                                <div class="">
+                                                    <span>09:00 PM</span>
+                                                    <p>OCT,13 2024</p>
+                                                    <b>PKX</b>
+                                                </div>
+                                                <div class="text-center">
+                                                    <b>1 stop (DOH)</b>
+                                                    <span>01:55 Hrs </span>
+                                                    <div class="Trip__stop">
+                                                        <i class="fas fa-circle"></i>
+                                                        <img src="assets/img/Line-right.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span>12:00 AM</span>
+                                                    <p>OCT,14 2024</p>
+                                                    <b>HKG</b>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
-                                    </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-5">
-                                            <label class="form-check-label" for="flexCheckDefault-5">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-6">
-                                            <label class="form-check-label" for="flexCheckDefault-6">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                                        <div class="Trip__pack">
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="thm_btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="border__btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
                                     </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-7">
-                                            <label class="form-check-label" for="flexCheckDefault-7">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-8">
-                                            <label class="form-check-label" for="flexCheckDefault-8">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                                    <div class="Trip__wrp v2 box__style">
+                                        <div class="Trip__details">
+                                            <a href="#" class="link__btn" data-bs-toggle="modal" data-bs-target="#oneWay"><img src="assets/img/send.svg" alt=""> Trip path</a>
+                                            <div class="Trip__name">
+                                                <i><img src="assets/img/trip-img.png" alt=""></i>
+                                                <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
+                                            </div>
+                                            <div class="Trip__time">
+                                                <div class="">
+                                                    <span>09:00 PM</span>
+                                                    <p>OCT,13 2024</p>
+                                                    <b>PKX</b>
+                                                </div>
+                                                <div class="text-center">
+                                                    <b>1 stop (DOH)</b>
+                                                    <span>01:55 Hrs </span>
+                                                    <div class="Trip__stop">
+                                                        <i class="fas fa-circle"></i>
+                                                        <img src="assets/img/Line-right.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span>12:00 AM</span>
+                                                    <p>OCT,14 2024</p>
+                                                    <b>HKG</b>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
+                                        <div class="Trip__pack">
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="thm_btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="border__btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-9">
-                                            <label class="form-check-label" for="flexCheckDefault-9">
-                                                Compare
-                                            </label>
+                                    <div class="Trip__wrp v2 box__style">
+                                        <div class="Trip__details">
+                                            <a href="#" class="link__btn" data-bs-toggle="modal" data-bs-target="#oneWay"><img src="assets/img/send.svg" alt=""> Trip path</a>
+                                            <div class="Trip__name">
+                                                <i><img src="assets/img/trip-img.png" alt=""></i>
+                                                <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
+                                            </div>
+                                            <div class="Trip__time">
+                                                <div class="">
+                                                    <span>09:00 PM</span>
+                                                    <p>OCT,13 2024</p>
+                                                    <b>PKX</b>
+                                                </div>
+                                                <div class="text-center">
+                                                    <b>1 stop (DOH)</b>
+                                                    <span>01:55 Hrs </span>
+                                                    <div class="Trip__stop">
+                                                        <i class="fas fa-circle"></i>
+                                                        <img src="assets/img/Line-right.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text-end">
+                                                    <span>12:00 AM</span>
+                                                    <p>OCT,14 2024</p>
+                                                    <b>HKG</b>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-10">
-                                            <label class="form-check-label" for="flexCheckDefault-10">
-                                                Compare
-                                            </label>
+                                        <div class="Trip__pack">
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="thm_btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="Trip__pack__blk">
+                                                <div class="flex">
+                                                    <h6> $269.60 |</h6>
+                                                    <span>Standard Eco</span>
+                                                </div>
+                                                <button type="button" class="border__btn">Select</button>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Compare
+                                                    </label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
+                            <div class="col-lg-6">
+                                <div class="h__66 overflow__scroll scroll-style-none">
+                                    <div class="brands__flight">
+                                        <div class="brands__flight__slider owl-carousel">
+                                            <div class="bf__slide">
+                                                <h6>Flexible Eco <a href="#" data-bs-toggle="modal" data-bs-target="#FlightPolicyModal"><img src="assets/img/help-circle.svg" alt=""> Flight Policy</a></h6>
+                                                <ul>
+                                                    <li>Carry-on bag</li>
+                                                    <li>Checked bag</li>
+                                                    <li>Changeable</li>
+                                                </ul>
+                                                <span>Public, Full journey, Including tax</span>
+                                                <div class="bf__slide__btm">
+                                                    <h6>$350.00</h6>
+                                                    <button type="button" class="thm_btn">Book now</button>
+                                                    <a href="#" class="link__btn">Ticket Details</a>
+                                                </div>
+                                            </div>
+                                            <div class="bf__slide">
+                                                <h6>Flexible Eco <a href="#"><img src="assets/img/help-circle.svg" alt=""> Flight Policy</a></h6>
+                                                <ul>
+                                                    <li>Carry-on bag</li>
+                                                    <li>Checked bag</li>
+                                                    <li>Changeable</li>
+                                                </ul>
+                                                <span>Public, Full journey, Including tax</span>
+                                                <div class="bf__slide__btm">
+                                                    <h6>$350.00</h6>
+                                                    <button type="button" class="thm_btn">Book now</button>
+                                                    <a href="#" class="link__btn">Ticket Details</a>
+                                                </div>
+                                            </div>
+                                            <div class="bf__slide">
+                                                <h6>Flexible Eco <a href="#"><img src="assets/img/help-circle.svg" alt=""> Flight Policy</a></h6>
+                                                <ul>
+                                                    <li>Carry-on bag</li>
+                                                    <li>Checked bag</li>
+                                                    <li>Changeable</li>
+                                                </ul>
+                                                <span>Public, Full journey, Including tax</span>
+                                                <div class="bf__slide__btm">
+                                                    <h6>$350.00</h6>
+                                                    <button type="button" class="thm_btn">Book now</button>
+                                                    <a href="#" class="link__btn">Ticket Details</a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
+                                        <a href="#" class="link__btn">View more brands for this flight</a>
                                     </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-11">
-                                            <label class="form-check-label" for="flexCheckDefault-11">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-12">
-                                            <label class="form-check-label" for="flexCheckDefault-12">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
-                                    </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-13">
-                                            <label class="form-check-label" for="flexCheckDefault-13">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-14">
-                                            <label class="form-check-label" for="flexCheckDefault-14">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
-                                    </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-15">
-                                            <label class="form-check-label" for="flexCheckDefault-15">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-16">
-                                            <label class="form-check-label" for="flexCheckDefault-16">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Trip__wrp box__style">
-                                <div class="Trip__details">
-                                    <div class="Trip__name">
-                                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                                    </div>
-                                    <div class="Trip__time">
-                                        <div class="">
-                                            <span>09:00 PM</span>
-                                            <p>OCT,13 2024</p>
-                                            <b>PKX</b>
-                                        </div>
-                                        <div class="text-center">
-                                            <b>1 stop (DOH)</b>
-                                            <span>01:55 Hrs </span>
-                                            <div class="Trip__stop">
-                                                <i class="fas fa-circle"></i>
-                                                <img src="assets/img/Line-right.svg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="text-end">
-                                            <span>12:00 AM</span>
-                                            <p>OCT,14 2024</p>
-                                            <b>HKG</b>
-                                        </div>
-                                    </div>
-                                    <div class="px-4">
-                                        <a href="#" class="link__btn"><img src="assets/img/send.svg" alt=""> Trip path</a>
-                                    </div>
-                                </div>
-                                <div class="Trip__pack">
-                                    <div class="Trip__pack__blk">
-                                        <h6> $269.60</h6>
-                                        <span>Standard Eco</span>
-                                        <button type="button" class="thm_btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-17">
-                                            <label class="form-check-label" for="flexCheckDefault-17">
-                                                Compare
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="Trip__pack__blk">
-                                        <h6> $344.60</h6>
-                                        <span>Flexible Eco</span>
-                                        <button type="button" class="border__btn">Select</button>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-18">
-                                            <label class="form-check-label" for="flexCheckDefault-18">
-                                                Compare
-                                            </label>
+                                    <div class="Standard__eco box__style">
+                                        <label for="" class="label__text">
+                                            <img src="assets/img/label-bg.png" alt="">
+                                            <span>AMMAN - DUBAI </span>
+                                        </label>
+                                        <ul>
+                                            <li>
+                                                <div class="sEco__left"><span>Thu, 19 Oct</span></div>
+                                                <div class="">
+                                                    <h6>Depart from Amman at 13:00 | 3h 35m flight</h6>
+                                                    <p>Queen Alia international Airport (AMM)</p>
+                                                    <p>Terminal unknown</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sEco__left"><span>Thu, 19 Oct</span></div>
+                                                <div class="">
+                                                    <h6>Arrive in Dubai at 16:35</h6>
+                                                    <p>Dubai international airport (DXB)</p>
+                                                    <p>Terminal 1</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="sEco__left"><i><img src="assets/img/user-icon.png" alt=""></i></div>
+                                                
+                                                <div class="">
+                                                    <h6>China Eastern Airlines (MU 5015)</h6>
+                                                    <p>Operated by China Eastern Airlines</p>
+                                                    <p>Airbus A321</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="sEco__blk">
+                                            <h6>Standard Eco</h6>
+                                            <p>(T . TLE42C51)</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1012,79 +825,286 @@
           <div class="Oneway__modal">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             <div class="icon__title">
-                <label for=""><img src="assets/img/plane-Icon-2.svg" alt=""> One way</label>
+                <label for=""><img src="assets/img/plane-Icon-2.svg" alt=""> Economy</label>
                 <h5>Amman (AMM) <i class="fal fa-arrow-right"></i> Dubai (DXB) <span><i class="fas fa-circle"></i> 1 Stop (DOH)</span></h5>
-                <p>OCT 13, 2024 - OCT 13, 2024 | 17:00 PM - 21:15 PM | 3h 20m</p>
+                <p class="mb-1">OCT 13, 2024 - OCT 13, 2024 | 17:00 PM - 21:15 PM | 3h 20m</p>
+                <small>1 Adult(s), 1 Child(s), 1 Infant(s) </small>
             </div>
-            <div class="trip__fd">
-                <h6>Flight Details</h6>
-                <div class="trip__fd__box">
-                    <div class="Trip__name">
-                        <i><img src="assets/img/trip-img.png" alt=""></i>
-                        <label>China Southern - 3h 20m  | <span>CZ309</span> </label>
-                    </div>
-                    <div class="Trip__time justify-content-start mt-4">
-                        <div class="">
-                            <b class="mb-4">17:00 PM (AMM)</b>
-                            <span>Queen Alia International Airport  </span>
-                        </div>
-                        <div class="text-center lh-sm"  >
-                            <b>1 stop (DOH)</b>
-                            <span>01:55 Hrs </span>
-                            <div class="Trip__stop">
-                                <i class="fas fa-circle"></i>
-                                <img src="assets/img/Line-right.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="text-end">
-                            <b class="mb-4">21:15 PM (DXB)</b>
-                            <span>Dubai International Airport</span>
-                        </div>
-                    </div>
-                    <div class="Trip__time__line">
-                        <ul>
-                            <li>
-                                <b>13 OCT <br> 17:00 </b>
-                                <i class="fas fa-circle"></i>
-                                <p>Queen Alia International Airport (AMM)  </p>
-                            </li>
-                            <li>
-                                <span>
-                                    <img src="assets/img/hourglass-Icon.svg" alt="">
-                                    1 Hrs 05 Min
-                                </span>
-                            </li>
-                            <li>
-                                <b>13 OCT <br> 18:00 </b>
-                                <i class="fas fa-circle"></i>
-                                <p>Doha Hamad International Airport (DOH)  </p>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <b>13 OCT <br> 17:00 </b>
-                                <i class="fas fa-circle"></i>
-                                <p>Queen Alia International Airport (AMM)  </p>
-                            </li>
-                            <li>
-                                <span>
-                                    <img src="assets/img/hourglass-Icon.svg" alt="">
-                                    1 Hrs 05 Min
-                                </span>
-                            </li>
-                            <li>
-                                <b>13 OCT <br> 18:00 </b>
-                                <i class="fas fa-circle"></i>
-                                <p>Doha Hamad International Airport (DOH)  </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <button type="button" class="link__btn px-4"><span class="More"><i class="far fa-chevron-down"></i> More</span> <span class="Hide"><i class="far fa-chevron-up"></i> Hide</span>  Details</button>
+            <div class="Economy__modal__content">
+                <div class="table__blk">
+                    <table class="table table-borderless">
+                        <thead>
+                          <tr>
+                            <th scope="col">Fare summary</th>
+                            <td>Adult(s) *1</td>
+                            <td>Child(s) *1</td>
+                            <td>Infant(s) *1</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Base fare</b></td>
+                                <td>$96.00</td>
+                                <td>$96.00</td>
+                                <td>$96.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tax</b></td>
+                                <td>$94.00</td>
+                                <td>$94.00</td>
+                                <td>$94.00</td>
+                            </tr>
+                            <tr>
+                                <td><b>Total</b></td>
+                                <td>$190.00</td>
+                                <td>$190.00</td>
+                                <td>$190.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table__blk Baggage__table">
+                    <h6>Baggage</h6>
+                    <table class="table table-borderless text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <td><img src="assets/img/man-icon.svg" alt=""> Adult(s)</td>
+                                <td><img src="assets/img/Child-icon.svg" alt=""> Child(s)</td>
+                                <td><img src="assets/img/baby-icon.svg" alt=""> Infant(s)</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start"><b>RUH-AMM</b></td>
+                                <td><img src="assets/img/briefcase.svg" alt=""> 6 * 20 Kilograms</td>
+                                <td><img src="assets/img/briefcase.svg" alt=""> 2 * 20 Kilograms</td>
+                                <td><img src="assets/img/briefcase.svg" alt=""> 1 * 20 Kilograms</td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td><img src="assets/img/bag-Icon-2.svg" alt=""> 6 * 7 Kilograms</td>
+                                <td><img src="assets/img/bag-Icon-2.svg" alt=""> 2 * 7 Kilograms</td>
+                                <td><img src="assets/img/bag-Icon-2.svg" alt=""> 1 * 7 Kilograms</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table__blk Amount__table">
+                    <h6>Amount</h6>
+                    <table class="table table-borderless text-center">
+                        <thead>
+                            <tr>
+                                <td>Base amount </td>
+                                <td>Tax amount </td>
+                                <td>Total amount</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                               <td><span>$700.00</span></td> 
+                               <td><span>$788.00</span></td> 
+                               <td><span>$1550.00</span></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="Services__list">
+                    <h6>Additional Services</h6>
+                    <ul>
+                        <li><i><img src="assets/img/circle-Icon.svg" alt=""></i> 30 Percent Miles Earned</li>
+                        <li><i><img src="assets/img/coffee-gray.svg" alt=""></i> Beverage</li>
+                        <li><i><img src="assets/img/smile.svg" alt=""></i> Entertainment</li>
+                        <li><i><img src="assets/img/cup-icon.svg" alt=""></i> Meal Voucher</li>
+                        <li><i><img src="assets/img/briefcase-lg.svg" alt=""></i> Carry 7 KG 15LB UPTO45LI 115LCM</li>
+                        <li><i><img src="assets/img/briefcase-lg.svg" alt=""></i> Checked Baggage</li>
+                        <li><i><img src="assets/img/clipboard.svg" alt=""></i> Upgrade Eligibility <span><img src="assets/img/alert-triangle.svg" alt=""></span></li>
+                        <li><i><img src="assets/img/rss.svg" alt=""></i> Internet Access <span><img src="assets/img/alert-triangle.svg" alt=""></span></li>
+                        <li><i><img src="assets/img/fi_user-gray.svg" alt=""></i> Pre Reserved Seat Assignment <span><img src="assets/img/alert-triangle.svg" alt=""></span></li>
+                    </ul>
                 </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="FlightPolicyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered  modal-dialog-scrollable scroll-style">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="FlightPolicy__Modal">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h5>The penalties details of the selected file</h5>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="Travelers-area " >
+
+    <div class="container-fluid px-5">
+        <div class="Travelers-info">
+            <button type="button" class="close__btn"><i class="fal fa-times"></i></button>
+            
+            <div class="Travelers-info__btn nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><img src="assets/img/check-circle-2.svg" alt="" class="check"> <img src="assets/img/user-Icon-2.svg" alt=""></button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><img src="assets/img/card-Icon.svg" alt=""></button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="TravInfo__tab">
+                        <h4>Travelers Information</h4>
+                        <div class="parson__btns">
+                            <ul>
+                                <li>
+                                    <button type="button"><img src="assets/img/man-icon.svg" alt="">  <span>Adult 1</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/man-icon.svg" alt="">  <span>Adult 2</span> <img class="worr__pr" src="assets/img/worr-alert-circle.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/man-icon.svg" alt="">  <span>Adult 3</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/Child-icon.svg" alt="">  <span>Child 1</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/Child-icon.svg" alt="">  <span>Child 2</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/Child-icon.svg" alt="">  <span>Child 3</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/baby-icon.svg" alt="">  <span>Infant 1</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/baby-icon.svg" alt="">  <span>Infant 2</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                                <li>
+                                    <button type="button"><img src="assets/img/baby-icon.svg" alt="">  <span>Infant 3</span> <img class="check__pr" src="assets/img/check-circle-2.svg" alt=""></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4>Client Details</h4>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="input__blk">
+                                    <label for="">Mobile</label>
+                                    <div class="input-number">
+                                        <input class=" tel" type="tel" name="leyka_donor_phone" inputmode="tel" value="" placeholder="000 000 0000"/>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="input__blk">
+                                    <label for="">Email Address <span>(Required)</span></label>
+                                    <div class="input">
+                                        <i><img src="assets/img/fi_mail.svg" alt=""></i>
+                                        <input type="text" placeholder="Email Address">
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <button type="button" class="inActive"><i class="fal fa-check"></i> Done</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="Payment__tab">
+                        <h4>Payment</h4>
+                        <div class="Booking_ref">
+                            <span>Booking Reference Number</span>
+                            <h6>TRI-AAE-0131 <i><img src="assets/img/copy.svg" alt=""></i></h6>
+                        </div>
+                        <div class="Payment__time">
+                            <ul>
+                                <li>
+                                    <span>Flight</span>
+                                    <h5>DXB - AMM</h5>
+                                </li>
+                                <li>
+                                    <span>Date</span>
+                                    <h5>13 OCT - 13 OCT</h5>
+                                </li>
+                                <li>
+                                    <span>Time</span>
+                                    <h5>17:00 - 21:15</h5>
+                                </li>
+                                <li>
+                                    <span>Subtotal</span>
+                                    <h5>$314.00</h5>
+                                </li>
+                                <li>
+                                    <span>Tax</span>
+                                    <h5>$60.00</h5>
+                                </li>
+                                <li>
+                                    <span>Total</span>
+                                    <h5>$374.00</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Wallets__opt">
+                            <h6><img src="assets/img/wallet-Icon.svg" alt=""> Main Wallets</h6>
+                            <div class="Wallets__blk">
+                                <div class="">
+                                    <h6>Main Wallet</h6>
+                                    <span>Wallet - Dollar <img src="assets/img/us-mini-flag.svg" alt=""></span>
+                                </div>
+                                <div class="">
+                                    <p>$ 00.00</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="Wallets__blk">
+                                <div class="">
+                                    <h6>Main Wallet</h6>
+                                    <span>Wallet - Dollar <img src="assets/img/us-mini-flag.svg" alt=""></span>
+                                </div>
+                                <div class="">
+                                    <p>$ 00.00</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Wallets__opt">
+                            <h6><img src="assets/img/wallet-Icon.svg" alt=""> Agents Wallets</h6>
+                            <div class="Wallets__blk">
+                                <div class="">
+                                    <h6>Main Wallet</h6>
+                                    <span>Wallet - Dollar <img src="assets/img/us-mini-flag.svg" alt=""></span>
+                                </div>
+                                <div class="">
+                                    <p>$ 00.00</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="Wallets__blk">
+                                <div class="">
+                                    <h6>Main Wallet</h6>
+                                    <span>Wallet - Dollar <img src="assets/img/us-mini-flag.svg" alt=""></span>
+                                </div>
+                                <div class="">
+                                    <p>$ 00.00</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="Active"><i class="fal fa-check"></i> Done</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 
@@ -1187,6 +1207,7 @@
         <script src="assets/js/jquery.nice-select.min.js"></script> 
         <script src="assets/js/owl.carousel.min.js"></script> 
         <script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/23.0.0/js/intlTelInput.min.js" ></script>
         <script src="assets/js/main.js"></script>
 <script>
     $('#date-only').calendar({
@@ -1201,7 +1222,74 @@ $('#time-piker').calendar({
 
 $(".trip__fd__box button").click(function () {
     $(this).toggleClass("active")
-    $(".Trip__time__line").fadeToggle("slow", "linear")
+    $(".Trip__time__line").fadeToggle("fast", "linear")
+})
+
+$(".bf__slide__btm button,.Travelers-info .close__btn").click(function () {
+    $(".Travelers-area").toggleClass("active").fadeToggle("slow", "linear")
+    
+})
+</script>
+
+<script>
+    $(function () {
+
+
+/*
+ * International Telephone Input v16.0.0
+ * https://github.com/jackocnr/intl-tel-input.git
+ * Licensed under the MIT license
+*/
+var input = document.querySelectorAll("input[name=leyka_donor_phone]");
+var iti_el = $('.iti.iti--allow-dropdown.iti--separate-dial-code');
+if(iti_el.length){
+    iti.destroy();
+    
+    // Get the current number in the given format
+
+    
+
+}
+for(var i = 0; i < input.length; i++){
+    iti = intlTelInput(input[i], {
+        autoHideDialCode: false,
+        initialCountry: "ps",
+        autoPlaceholder: "aggressive" ,
+        separateDialCode: true,
+        customPlaceholder:function(selectedCountryPlaceholder,selectedCountryData){
+            return ''+selectedCountryPlaceholder.replace(/[0-9]/g,'X');
+        },
+        geoIpLookup: function(callback) {
+            $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+              var countryCode = (resp && resp.country) ? resp.country : "";
+              callback(countryCode);
+          });
+        },
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.0/js/utils.js" // just for 
+});
+
+   
+$('input[name="leyka_donor_phone"]').on("focus click countrychange", function(e, countryData) {
+
+    var pl = $(this).attr('placeholder') + '';
+    var res = pl.replace( /X/g ,'9');
+    if(res != 'undefined'){
+        $(this).inputmask(res, {placeholder: "X", clearMaskOnLostFocus: true});
+    }
+    
+    
+
+
+});
+   
+   $('input[name="leyka_donor_phone"]').on("focusout", function(e, countryData) {
+       var intlNumber = iti.getNumber();
+       console.log(intlNumber);   
+   });
+   
+}
+
+
 })
 </script>
     </body>
